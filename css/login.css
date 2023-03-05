@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01:#F2F2F2;
+    --cor02:#A62479;
+    --cor03:#3D58F2;
+    --cor04:#418EF2;
+    --cor05:#4BC3F2;
+    --cor06:#32BA7C;
+    --cor07:#FFD54B;
+    --cor08:#FF5A54;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 25px;
+    
+
+    height: 800px;
+    width: 1340px;
+    margin: 174px auto;
+    background-color: var(--cor01);
+}
+
+/*Content first content = Content Cadastro 
+  Content second content = Content Login    
+*/
+
+.first-column{
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+.second-column{
+    flex: 2 0 auto;
+}
+
+.cadastro{
+    display: flex;
+}
+
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    position: absolute;
+    display: none;
+}
