@@ -1,3 +1,5 @@
+/*@import url('LINK DA FONTE GOOGLE FONTS');*/
+
 * {
     margin: 0;
     padding: 0;
@@ -14,44 +16,158 @@
     --cor07:#FFD54B;
     --cor08:#FF5A54;
 }
+/* Fazer depois: Colocar a fonte que será utilizada */ 
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+} */
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
-    border-radius: 25px;
-    
+    height: 100vh;
 
-    height: 800px;
-    width: 1340px;
-    margin: 174px auto;
-    background-color: var(--cor01);
+    background-color: var(--cor05);
 }
 
-/*Content first content = Content Cadastro 
-  Content second content = Content Login    
-*/
+.content {
+    background-color: var(--cor01);
+    border-radius: 25px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
 
-.first-column{
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: var(--cor02);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.title {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-primary {
+    color: #FFFFFF;
+}
+
+.title-second {
+    color: var(--cor06);
+}
+
+.first-column {
     text-align: center;
     flex: 1 0 auto;
+    z-index: 10;
 }
 
-.second-column{
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+.description-primary {
+    color: #FFFFFF;
+}
+
+.description-second {
+    color: var(--cor06);
+}
+
+.btn {
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.btn-primary:hover{
+    background-color: #FFFFFF;
+    color: var(--cor06);
+}
+
+.btn-second {
+    background-color: var(--cor06);
+    border: 1px solid black;
+}
+
+.btn-second:hover {
+    background-color: #FFFFFF;
+    border: 1px solid var(--cor06);
+    color: var(--cor01);
+}
+
+.second-column {
     flex: 2 0 auto;
-}
-
-.cadastro{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.form-cadastro{
+.first-content {
+    display: flex;
+    display: none;
+}
+
+.form {
     display: flex;
     flex-direction: column;
 }
 
-.login{
+.form input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: var(--cor01);
+    margin: 8px;
+}
+
+.label-input {
+    background-color: var(--cor03);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+/* .icon-modify {
+    color: var(--01);
+    pading: 0 5px; 
+}
+*/
+
+.second-content {
     position: absolute;
-    display: none;
+    display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+}
+
+.second-content .second-column {
+    order: 1;
 }
