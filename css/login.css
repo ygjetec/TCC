@@ -48,6 +48,8 @@
     height: 100%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+
+    left: 0;
 }
 
 .title {
@@ -65,9 +67,13 @@
     color: var(--cor06);
 }
 
+.first-content .second-column {
+    z-index: 12;
+}
+
 .first-column {
     text-align: center;
-    flex: 1 0 auto;
+    width: 40%;
     z-index: 10;
 }
 
@@ -103,6 +109,7 @@
 .btn-primary {
     background-color: transparent;
     border: 1px solid #FFFFFF;
+    transition: background-color .7s;
 }
 
 .btn-primary:hover{
@@ -113,6 +120,7 @@
 .btn-second {
     background-color: var(--cor06);
     border: 1px solid black;
+    transition: background-color .7s;
 }
 
 .btn-second:hover {
@@ -122,7 +130,7 @@
 }
 
 .second-column {
-    flex: 2 0 auto;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +138,6 @@
 
 .first-content {
     display: flex;
-    display: none;
 }
 
 .form {
@@ -166,8 +173,151 @@
 
 .second-content .first-column {
     order: 2;
+    z-index: -1;
 }
 
 .second-content .second-column {
     order: 1;
+    z-index: -1;
+}
+
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+
+.sign-in-js .second-content .first-column {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px ;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    animation: slidein 1.7s;
+}
+
+.sign-up-js .content:before{
+    animation: slideout 1.7s;
+
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column{
+    z-index: 13;
+}
+
+/* Animação deslocamento conteúdo atrás do content:before*/
+.sign-in-js .first-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 3s;
+}
+
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoDir 3s;
+}
+
+/*Animação CSS para o conteúdo */
+@keyframes deslocamentoEsq {
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+    50%{
+        left: 100px;
+        opacity: .2;
+    }
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDir {
+    from{
+        left: 0;
+        z-index: 12;
+    }
+    25%{
+        left: 80px;
+    }
+    50%{
+        left: 100px;
+    }
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+/*Animação CSS */
+
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+    }
+    25%{
+        left: 15%;
+        width: 50%;
+    }
+    50%{
+        left: 30%;
+        width: 60%;
+    }
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 60%;
+        width: 40%;
+    }
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+    50%{
+        left: 30%;
+        width: 60%;
+    }
+    75%{
+        left: 15%;
+        width: 50%;
+    }
+    to {
+        left: 0;
+        width: 40%;
+    }
 }
