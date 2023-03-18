@@ -17,8 +17,21 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: var(--cor05);
+    height: 124px;
+    text-align: center;
+    position: fixed;
+    min-width: 100%;
+}
+
+header h1 {
+    padding-top: 35px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
 }
 .container {
     display: flex;

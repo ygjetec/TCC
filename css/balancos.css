@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+:root {
+    --cor01:#F2F2F2;
+    --cor02:#A62479;
+    --cor03:#3D58F2;
+    --cor04:#418EF2;
+    --cor05:#4BC3F2;
+    --cor06:#32BA7C;
+    --cor07:#FFD54B;
+    --cor08:#FF5A54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .elementos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /*Quebra com 465px*/
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin: 37px 50px;
+}
+
+header {
+    background-color: var(--cor05);
+    height: 124px;
+    text-align: center;
+    position: fixed;
+    min-width: 100%;
+}
+
+header h1 {
+    padding: 35px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+}
