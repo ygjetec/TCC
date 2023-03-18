@@ -22,6 +22,11 @@ header .elementos {
     align-items: flex-start;
     justify-content: space-between;
     /*Quebra com 465px*/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header img {
@@ -33,6 +38,9 @@ header img {
 header {
     background-color: var(--cor05);
     height: 124px;
+    text-align: center;
+    min-width: 100%;
+
     text-align: center;
     position: fixed;
     min-width: 100%;
