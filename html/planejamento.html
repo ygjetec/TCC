@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MEM - Página Inicial</title>
+        <title>MEM - Planejamento</title>
 
         <link rel="stylesheet" href="/css/planejamento.css">
 
@@ -22,40 +22,50 @@
         </header>
 
         <article>
-            <div>
+            <div class="first">
                 <img src="/imgs/icon-calendario.svg" alt="Ícone Calendário em Preto e Branco">
-                <h1> Mês Referente</h1>
+                <h2 id="mes"> Mês Referente</h2>
             </div>
 
-            <div>
-                <div>
-                    <h2>Valor Inicial</h2>
-                    <h2>Projeção Final</h2>
+            <div class="second">
+                <div class="conteudo1">
+                    <div class="campos-valores">
+                        <h2>Valor Inicial: </h2>
+                        <p>R$ XXXX,XX</p>
+                        <h2>Projeção Final: </h2>
+                        <p>R$ XXXX,XX</p>
+                    </div>
 
-                    <img src="/imgs/icon-fixado.svg" alt="Ícone de tarraxa em Preto e Branco">
-                    <h2>Valores Fixos</h2>
+                    <div class="valores-fixos">
+                        <img src="/imgs/icon-fixado.svg" alt="Ícone de tarraxa em Preto e Branco">
+                        <h2 id="titulo-valores-fixos">Valores Fixos</h2>
+                    </div>
 
-                    <div>
+                    <div class="caixa-valores-fixos">
                         <div id="valor-fixo1">
-                            <h4> Título do Gasto </h4>
+                            <h4 id="tit">Título do Gasto</h4>
                             <p> Valor Gasto</p>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <img src="/imgs/icon-planejamento.svg" alt="Ícone preto e branco de caderneta com metas a serem cumpridas e um relógio">
-                    <h2>Planejamento</h2>
-                    <a href="#"><img src="/imgs/btn-icon-criar-planejamento.svg" alt="Ícone preto e branco de um quadrado com o símbolo de mais"></a>
+                <div class="conteudo2">
+                    <div class="cabecalho">
+                        <div id="icon-title">
+                            <img src="/imgs/icon-planejamento.svg" alt="Ícone preto e branco de caderneta com metas a serem cumpridas e um relógio">
+                            <h2 id="tit-plan">Planejamento</h2>
+                        </div>
+                        <a href="#"><img src="/imgs/btn-icon-criar-planejamento.svg" alt="Ícone preto e branco de um quadrado com o símbolo de mais"></a>
+                    </div>
 
-                    <div>
+                    <div class="quadro">
                         <div id="gasto1">
                             <img src="" alt="" class="categoria">
                             <p>Descrição Gasto</p>
-                            <p>Valor Dívida</p>
                             <p>Data Pagamento</p>
+                            <p>Valor Dívida</p>
                         </div>
-                        <div>
+                        <div id="gastos-totais">
                             <p>Gastos Totais</p>
                         </div>
                     </div>

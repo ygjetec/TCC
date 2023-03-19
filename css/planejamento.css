@@ -49,3 +49,108 @@ body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
 }
+
+article {
+    padding-top: 167px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+}
+
+.first #mes {
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.second {
+    display: flex;
+    padding-top: 30px;
+}
+
+.campos-valores {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.valores-fixos {
+    display: flex;
+    margin: 10px 0 10px 50px;
+}
+
+.valores-fixos #titulo-valores-fixos {
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.caixa-valores-fixos {
+    border: 5px solid var(--cor03);
+    border-radius: 25px;
+    margin-left: 50px;
+    width: 450px;
+    height: 500px;
+}
+
+#valor-fixo1 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#tit{
+    margin-right: 50px;
+}
+
+.conteudo2 {
+    display: flex;
+    margin: 0 50px 0 200px;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quadro {
+    margin-top: 15px;
+    border: 5px solid var(--cor02);
+    border-radius: 25px;
+    height: 100%;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#icon-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#gasto1 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gastos-totais {
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+#tit-plan {
+    padding: 5px;
+}
