@@ -44,7 +44,7 @@ body {
     background-color: #fff;
     border-radius: 15px;
     width: 960px;
-    height: 50%;
+    height: 65%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -209,6 +209,20 @@ input{
     padding-left: 15px;
     
 }
+
+.icon{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.info{
+    display: flex;
+}
+
+/* .sexo{
+    display: flex;
+    width: 15px;
+} */
 
 /* input:-webkit-autofill 
 {    
