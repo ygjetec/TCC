@@ -50,3 +50,95 @@ body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
 }
+
+article {
+    padding-top: 167px;
+}
+
+.btns-criar-remover {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.btns-criar-remover button {
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px
+}
+
+#btn-add {
+    background-color: var(--cor06);
+}
+
+#btn-add img {
+    width: 35px;
+    height: 35px;
+}
+
+#btn-rem {
+    background-color: var(--cor08);
+}
+
+.desc {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.tit-desc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.classificacoes {
+    display: flex;
+    align-items: flex-end;
+}
+
+#tit-minhas-metas {
+    display: flex;
+    align-items: center;
+}
+
+#desc-prioridades {
+    display: flex;
+    align-items: center;
+}
+
+.quads {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.quads h3 {
+    margin-right: 25px;
+}
+
+#quad-verde {
+    background-color: var(--cor06);
+    border: 3px solid black;
+    width: 25px;
+    height: 25px;
+}
+
+#quad-amarelo {
+    background-color: var(--cor07);
+    border: 3px solid black;
+    width: 25px;
+    height: 25px;
+}
+
+#quad-vermelho {
+    background-color: var(--cor08);
+    border: 3px solid black;
+    width: 25px;
+    height: 25px;
+}
