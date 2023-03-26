@@ -49,3 +49,141 @@ body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
 }
+
+article {
+    padding-top: 167px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-esq {
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px 0 50px;
+}
+
+#campo-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-bottom: 70px;
+}
+
+#cont-campo-1 {
+    border: 2px solid var(--cor03);
+    display: flex;
+    size: auto;
+}
+
+.grafico {
+    width: 620px;
+    height: 430px;
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+
+.cont-esq button {
+    height: 35px;
+    width: 225px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-adc {
+    background-color: var(--cor06);
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#btn-rem {
+    background-color: var(--cor08);
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#btn-adc:hover{
+    background-color: white;
+    color: var(--cor06);
+    transition: 0.4s;
+    border: 2px solid var(--cor06);
+    height: 37px;
+    width: 235px;
+}
+
+#btn-rem:hover{
+    background-color: white;
+    color: var(--cor08);
+    transition: 0.4s;
+    border: 2px solid var(--cor08);
+    height: 37px;
+    width: 235px;
+}
+
+.cont-dir{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 60px;
+}
+
+#campo-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin-bottom: 30px;
+}
+
+#campo-3 {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin-bottom: 30px;
+}
+
+#cont-campo-3 {
+    border: 2px solid var(--cor02);
+    display: flex;
+    size: auto;
+}
+
+#campo-4 {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin-bottom: 30px;
+}
+
+#cont-campo-4 {
+    border: 2px solid var(--cor04);
+    display: flex;
+    size: auto;
+}
+
+.ult-mov {
+    width: 720px;
+    height: 350px;
+    background-color: lightgrey;
+}
+
+.ult-mov h2 {
+    margin-bottom: 20px;
+}
+
+.mov {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    size: auto;
+}
+
+#mov-pos {
+    color: #32BA7C;
+}
+
+#mov-neg {
+    color: #FF5A54;
+}
