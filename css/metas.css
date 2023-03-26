@@ -89,25 +89,22 @@ article {
 
 .desc {
     display: flex;
-    padding-bottom: 60px;
-}
-
-.tit-desc {
-    display: flex;
+    padding: 0 50px 60px 50px;
+    align-items: center;
     justify-content: space-around;
 }
 
 .classificacoes {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
-#tit-minhas-metas {
+#tit-MM {
     display: flex;
     align-items: center;
 }
 
-#desc-prioridades {
+#prioridades {
     display: flex;
     align-items: center;
 }
@@ -141,4 +138,47 @@ article {
     border: 3px solid black;
     width: 25px;
     height: 25px;
+}
+
+.card-meta {
+    display: flex;
+    margin: 0 100px 50px 50px;
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 350px;
+    height: 200px;
+    justify-content: space-around;
+
+    background-color: var(/*verde, vermelho ou amarelo*/);
+}
+
+#cont-esq {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px 5px 10px;
+}
+
+#data-sit {
+    padding-top: 25px;
+}
+
+hr {
+    border: 1px solid;
+}
+
+#cont-dir {
+    display: flex;
+    align-items: center;
+}
+
+#btn-concluido {
+    border-style: unset;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#btn-concluido:hover{
+    background-color: var(--cor06);
+    border-radius: 25px;
+    transition: 0.4s;
 }
