@@ -39,6 +39,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ecf0f1;
+    /* padding-top: 20%;
+    padding-bottom: 10%; */
 }
 .content {
     background-color: #fff;
@@ -492,6 +494,33 @@ a{
 
     .form {
         width: 90%;
+        align-items: center;
+    }
+
+    .cont_login{
+        align-items: center;
+    }
+    .info{
+        margin-right: 8px;
+    }
+
+    .info_1{
+        display: flex;
+        justify-content: center;
+    }
+    .info_2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info_3{
+        display: flex;
+        flex-direction: column;
+        justify-content: left
+    }
+    .sexo{
+        justify-content: center;
+        
     }
     
     /* ANIMAÇÃO MOBILE CSS*/
@@ -611,7 +640,11 @@ a{
 @media screen and (max-width: 740px) {
     .form {
         width: 90%;
-        
+        align-items: center;
+    }
+
+    .cont_login{
+        align-items: center;
     }
 
     .info{
@@ -623,6 +656,15 @@ a{
     }
     .info_2{
         display: flex;
+    }
+    .info_3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sexo{
+        justify-content: center;
+        
     }
 }
 
