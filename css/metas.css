@@ -83,10 +83,6 @@ article {
     height: 35px;
 }
 
-#btn-rem {
-    background-color: var(--cor08);
-}
-
 .desc {
     display: flex;
     padding: 0 50px 60px 50px;
@@ -168,6 +164,8 @@ hr {
 
 #cont-dir {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -180,5 +178,24 @@ hr {
 #btn-concluido:hover{
     background-color: var(--cor06);
     border-radius: 25px;
+    transition: 0.4s;
+}
+
+#btn-rem {
+    border-style: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 50px;
+    height: 55px;
+}
+
+#btn-rem img {
+    width: 49px;
+    height: 49px;
+}
+
+#btn-rem:hover{
+    background-color: var(--cor08);
+    border-radius: 31px;
     transition: 0.4s;
 }
