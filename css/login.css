@@ -22,6 +22,7 @@ header {
     height: 124px;
     text-align: center;
     min-width: 100%;
+    position: fixed;
 }
 
 header h1 {
@@ -39,8 +40,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ecf0f1;
-    /* padding-top: 20%;
-    padding-bottom: 10%; */
+    padding-top: 20%;
+    padding-bottom: 10%;
 }
 .content {
     background-color: #fff;
@@ -240,12 +241,6 @@ input{
     margin-left: 10px;
 }
 
-
-/* input:-webkit-autofill 
-{    
-    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
-    -webkit-text-fill-color: #000 !important;
-} */
 .label-input {
     background-color: #ecf0f1;
     display: flex;
@@ -307,13 +302,13 @@ a{
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: slidein 1.3s;
 
     z-index: 12;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: slideout 1.3s; 
 
     z-index: 12;
 }
@@ -337,13 +332,13 @@ a{
 
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: deslocamentoEsq 1.3s; 
 }
 
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: deslocamentoDir 1.3s; 
 }
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
@@ -359,13 +354,12 @@ a{
     25% {
         left: -80px;
         opacity: .2;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
 
     50% {
         left: -100px;
         opacity: .1;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
+
     }
 
     to {
@@ -387,14 +381,11 @@ a{
     25% {
         left: 80px;
         pacity: .2;
-        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
     }
 
     50% {
         left: 100px;
         pacity: .1;
-        /* z-index: 12; NÃO HÁ NECESSIDADE*/
-        /* background-color: yellow;  Exemplo que dei no vídeo*/
     }
 
     to {
@@ -465,6 +456,13 @@ a{
 
 /*VERSÃO MOBILE*/
 @media screen and (max-width: 1040px) {
+    .container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    header{
+        position: relative;
+    }
     .content {
         width: 100%;
         height: 100%;
@@ -529,20 +527,18 @@ a{
 
         from {
             top: 0;
-            opacity: 1;
+            opacity: .3;
             z-index: 12;
         }
     
         25% {
             top: -80px;
-            opacity: .5;
-            /* z-index: 12; NÃO HÁ NECESSIDADE */
+            opacity: .2;
         }
     
         50% {
             top: -100px;
-            opacity: .2;
-            /* z-index: 12; NÃO HÁ NECESSIDADE */
+            opacity: .1;
         }
     
         to {
@@ -557,22 +553,23 @@ a{
     
         from {
             top: 0;
+            opacity: .3;
             z-index: 12;
         }
     
         25% {
             top: 80px;
-            /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+            opacity: .2;
         }
     
         50% {
             top: 100px;
-            /* z-index: 12; NÃO HÁ NECESSIDADE*/
-            /* background-color: yellow;  Exemplo que dei no vídeo*/
+            opacity: .1;
         }
     
         to {
             top: 110px;
+             opacity: 0;
             z-index: -1;
         }
     }
