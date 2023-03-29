@@ -61,8 +61,6 @@ article {
     align-items: center;
     justify-content: center;
     margin: 0 50px 50px 50px;
-
-    border: 1px solid black;
 }
 
 #mesReferente {
@@ -101,7 +99,8 @@ article {
 }
 
 .movimentacoes {
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 25px;
 
     display: flex;
     flex-direction: column;
@@ -129,6 +128,7 @@ article {
     height: 50px;
     border-radius: 25px;
     background-color: var(--cor06);
+    cursor: pointer;
 }
 
 #btn-gasto {
@@ -136,10 +136,10 @@ article {
     height: 50px;
     border-radius: 25px;
     background-color: var(--cor08);
+    cursor: pointer;
 }
 
 .extrato {
-    border: 2px solid black;
     display: flex;
     align-items: center;
     margin-top: 30px;
@@ -154,6 +154,10 @@ article {
     width: 50%;
     width: 250px;
     height: 60px;
+    background-color: var(--cor02);
+    border-radius: 20px;
+
+    cursor: pointer;
 }
 
 .extrato img {
@@ -161,9 +165,120 @@ article {
 }
 
 .coluna2 {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#tit-disp-categoria {
+    display: flex;
+    justify-content: center;
+}
+
+.disp-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 3px solid var(--cor04);
+    border-radius: 25px;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+}
+
+.filtro-carteira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtro-carteira h2 {
+    padding-right: 10px;
+}
+
+.quadro-ult-gasto {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor03);
+    border-radius: 25px;
+    padding: 10px;
+
+    width: 350px;
+    height: auto;
+}
+
+.ult-gasto {
+    justify-content: space-between;
+}
+
+.tit-data-gasto {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+}
+
+.valor-ult-gasto {
+    display: flex;
+    justify-content: center;
 }
 
 .coluna3 {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.tit-carteira {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tit-carteira img {
+    padding-right: 15px;
+}
+
+.carteiras {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    border: 3px solid var(--cor02);
+    border-radius: 25px;
+    width: 500px;
+    height: auto;
+}
+
+.carteira {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.atual-limite {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#btn-criar {
+    width: 150px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: var(--cor06);
+    cursor: pointer;
+}
+
+#btn-remover {
+    width: 150px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: var(--cor08);
+    cursor: pointer;
 }
