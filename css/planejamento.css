@@ -57,6 +57,7 @@ article {
 .first {
     display: flex;
     justify-content: center;
+    margin: 0 50px 0px 50px;
 }
 
 .first #mes {
