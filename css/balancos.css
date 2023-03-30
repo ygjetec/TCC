@@ -71,7 +71,6 @@ article {
 
 .conteudo {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 0 50px 50px 50px;
 }
@@ -93,7 +92,8 @@ article {
     display: flex;
     width: 130px;
     height: 30px;
-    border: 1px solid black;
+    margin-left: 7px;
+    border: 2px solid black;
     align-items: center;
     justify-content: center;
 }
@@ -131,12 +131,32 @@ article {
     cursor: pointer;
 }
 
+#btn-recebido:hover{
+    width: 160px;
+    height: 55px;
+    background-color: white;
+    color: var(--cor06);
+    border: 4px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+}
+
 #btn-gasto {
     width: 150px;
     height: 50px;
     border-radius: 25px;
     background-color: var(--cor08);
     cursor: pointer;
+}
+
+#btn-gasto:hover{
+    width: 160px;
+    height: 55px;
+    background-color: white;
+    color: var(--cor08);
+    border: 4px solid var(--cor08);
+    transition: 0.4s;
+    font-weight: bolder;
 }
 
 .extrato {
@@ -151,8 +171,7 @@ article {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
-    width: 250px;
+    width: 100px;
     height: 60px;
     background-color: var(--cor02);
     border-radius: 20px;
@@ -161,12 +180,23 @@ article {
 }
 
 .extrato img {
-    margin: 25px;
+    margin: 8px;
+}
+
+#btn-extrato:hover{
+    width: 110px;
+    height: 55px;
+    background-color: white;
+    color: var(--cor02);
+    border: 4px solid var(--cor02);
+    transition: 0.4s;
+    font-weight: bolder;
 }
 
 .coluna2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #tit-disp-categoria {
@@ -229,6 +259,7 @@ article {
 
 .tit-carteira {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -261,12 +292,11 @@ article {
 
 .btns {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content: space-between;
 }
 
 #btn-criar {
-    width: 150px;
+    width: 100px;
     height: 50px;
     border: 3px solid black;
     border-radius: 25px;
@@ -274,11 +304,31 @@ article {
     cursor: pointer;
 }
 
+#btn-criar:hover{
+    width: 110px;
+    height: 55px;
+    background-color: white;
+    color: var(--cor06);
+    border: 4px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+}
+
 #btn-remover {
-    width: 150px;
+    width: 100px;
     height: 50px;
     border: 3px solid black;
     border-radius: 25px;
     background-color: var(--cor08);
     cursor: pointer;
+}
+
+#btn-remover:hover{
+    width: 110px;
+    height: 55px;
+    background-color: white;
+    color: var(--cor08);
+    border: 4px solid var(--cor08);
+    transition: 0.4s;
+    font-weight: bolder;
 }

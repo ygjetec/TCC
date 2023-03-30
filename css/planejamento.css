@@ -67,6 +67,10 @@ article {
     margin-left: 15px;
 }
 
+#first_img{
+    margin-right: 7px;
+}
+
 .second {
     display: flex;
     padding-top: 30px;
