@@ -7,6 +7,7 @@
         <title>MEM - Metas</title>
 
         <link rel="stylesheet" href="/css/metas.css">
+        <link rel="stylesheet" href="/css/navbar.css">
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         
@@ -16,9 +17,23 @@
     <body>
         <header>
             <div class="elementos">
-                <img src="/imgs/icon-usuario.svg" alt="Ícone de Usuário Em Preto e Branco">
-                <h1>Make Ends Meet</h1>
-                <img src="/imgs/icon-menu.svg" alt="Menu de Três Barras Horizontais em Preto">
+                <div><img src="/imgs/icon-usuario.svg" alt="Ícone de Usuário Em Preto e Branco"></div>
+                <div>
+                    <h1 class="logo">Make Ends Meet</h1>
+                </div>
+                <nav>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="pagInicial.html">Pagina Inicial</a></li>
+                        <li><a href="planejamento.html">Planejamento</a></li>
+                        <li><a href="balancos.html">Balanços</a></li>
+                        <li><a href="reserva.html">Reserva</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>    
 
@@ -66,5 +81,7 @@
                     <abbr title="Remover Meta"><button id="btn-rem"><img src="/imgs/btn-icon-remover.svg" alt="Ícone preto e branco circular com um símbolo de X no centro"></button></abbr>
                 </div>
             </div>
+        </article>
+        <script src="/js/navbar.js"></script>
     </body>
 </html>

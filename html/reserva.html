@@ -7,6 +7,7 @@
         <title>MEM - Reserva</title>
 
         <link rel="stylesheet" href="/css/reserva.css">
+        <link rel="stylesheet" href="/css/navbar.css">
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         
@@ -15,56 +16,69 @@
     <body>
         <header>
             <div class="elementos">
-                <img src="/imgs/icon-usuario.svg" alt="Ícone de Usuário Em Preto e Branco">
-                <h1>Make Ends Meet</h1>
-                <img src="/imgs/icon-menu.svg" alt="Menu de Três Barras Horizontais em Preto">
+                <div><img src="/imgs/icon-usuario.svg" alt="Ícone de Usuário Em Preto e Branco"></div>
+                <div>
+                    <h1 class="logo">Make Ends Meet</h1>
+                </div>
+                <nav>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="pagInicial.html">Pagina Inicial</a></li>
+                        <li><a href="metas.html">Metas</a></li>
+                        <li><a href="planejamento.html">Planejamento</a></li>
+                        <li><a href="balancos.html">Balanços</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <div class="cont-esq">
+                <div id="campo-1">
+                    <h2>Quantia desejada: </h2>
+                    <h2 id="cont-campo-1">R$ XXXX,XX</h2>
+                </div>
+                <div class="grafico">
+                    <h2>Gráfico</h2>
+                </div>
+            
+                <div class="btns">
+                    <button id="btn-adc">Adicionar</button>
+                    <button id="btn-rem">Remover</button>
+                </div>
             </div>
 
-            <article>
-                <div class="cont-esq">
-                    <div id="campo-1">
-                        <h2>Quantia desejada: </h2>
-                        <h2 id="cont-campo-1">R$ XXXX,XX</h2>
+            <div class="cont-dir">
+                <div id="campo-2">
+                    <h2>Última modificação: </h2>
+                    <h2>DD/MM/YYYY</h2>
+                </div>
+                <div>
+                    <div id="campo-3">
+                        <h2>Sua reserva atual: </h2>
+                        <h2 id="cont-campo-3">R$ XXXX,XX</h2>
                     </div>
-                    <div class="grafico">
-                        <h2>Gráfico</h2>
-                    </div>
-                
-                    <div class="btns">
-                        <button id="btn-adc">Adicionar</button>
-                        <button id="btn-rem">Remover</button>
+                    <div id="campo-4">
+                        <h2>Quantia faltante: </h2>
+                        <h2 id="cont-campo-4">R$ XXXX,XX</h2>
                     </div>
                 </div>
-
-                <div class="cont-dir">
-                    <div id="campo-2">
-                        <h2>Última modificação: </h2>
-                        <h2>DD/MM/YYYY</h2>
+                <div class="ult-mov">
+                    <h2>Últimas movimentações</h2>
+                    <div class="mov">
+                        <p id="mov-pos">+R$ XXXX,XX</p>
+                        <p> DD/MM/YYYY</p>
                     </div>
-                    <div>
-                        <div id="campo-3">
-                            <h2>Sua reserva atual: </h2>
-                            <h2 id="cont-campo-3">R$ XXXX,XX</h2>
-                        </div>
-                        <div id="campo-4">
-                            <h2>Quantia faltante: </h2>
-                            <h2 id="cont-campo-4">R$ XXXX,XX</h2>
-                        </div>
-                    </div>
-                    <div class="ult-mov">
-                        <h2>Últimas movimentações</h2>
-                        <div class="mov">
-                            <p id="mov-pos">+R$ XXXX,XX</p>
-                            <p> DD/MM/YYYY</p>
-                        </div>
-                        <div class="mov">
-                            <p id="mov-neg" >-R$ XXXX,XX</p>
-                            <p> DD/MM/YYYY</p>
-                        </div>
+                    <div class="mov">
+                        <p id="mov-neg" >-R$ XXXX,XX</p>
+                        <p> DD/MM/YYYY</p>
                     </div>
                 </div>
-            </article>
-
-        </header>
+            </div>
+        </article>
+        <script src="/js/navbar.js"></script>
     </body>
 </html>
