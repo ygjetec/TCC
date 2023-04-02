@@ -23,11 +23,40 @@
         </header>    
 
         <article>
-            <div class="btns-criar-remover">
-                <button id="btn-add">
+            <div class="btns-criar-remover" onclick="showModal()" >
+                <button id="btn-add" >
                     Criar Meta
                     <img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de adicionar">
                 </button>
+            </div>
+
+            <div class="modal"  id="modal">
+                <div class="modal-content">
+                    <form action="">
+                        <div class="btn-fechar">
+                            <input onclick="hideModal()" type="reset" value="X" id="fechar-card">
+                        </div>
+                        <div class="campo">
+                            <label for="titulo">Título</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data-final">Data Final:</label>
+                            <input type="date" required>
+                        </div>
+
+                        <div id="options">
+                            <label for="prioridades">Nível de Prioridade:</label>
+                            <select name="prioridade" id="nvl-prioridade" required>
+                                <option value="nao-urgente">Não Urgente</option>
+                                <option value="media">Média</option>
+                                <option value="urgente">Urgente</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Criar Meta">
+                    </form>
+                </div>
             </div>
 
             <div class="desc">
@@ -66,5 +95,6 @@
                     <abbr title="Remover Meta"><button id="btn-rem"><img src="/imgs/btn-icon-remover.svg" alt="Ícone preto e branco circular com um símbolo de X no centro"></button></abbr>
                 </div>
             </div>
+        <script src="/js/metas.js"></script>
     </body>
 </html>
