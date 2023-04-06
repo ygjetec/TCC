@@ -41,13 +41,46 @@
                     <h2>Quantia desejada: </h2>
                     <h2 id="cont-campo-1">R$ XXXX,XX</h2>
                 </div>
+
                 <div class="grafico">
                     <h2>Gráfico</h2>
                 </div>
             
-                <div class="btns">
-                    <button id="btn-adc">Adicionar</button>
-                    <button id="btn-rem">Remover</button>
+                <div class="btns" >
+                    <button id="btn-adc" onclick="showModal_adc()" >Adicionar</button>
+                    <button id="btn-rem" onclick="showModal_rem()">Remover</button>
+                </div>
+
+                <div class="modal" id="modal_adc">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="btn-fechar" onclick="hideModal_adc()">
+                                <input type="reset" value="X" id="fechar-card">
+                            </div>
+                            <div class="campo">
+                                <h2>Adicionar Quantia</h2>
+                                <label for="adc-quantia">Adicionar: </label>
+                                <input type="number" name="valor-adc" required>
+                            </div>
+                            <input type="submit" value="Confirmar">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal_rem">
+                    <div class="modal-content">
+                        <form action="">
+                            <div class="btn-fechar" onclick="hideModal_rem()">
+                                <input type="reset" value="X" id="fechar-card">
+                            </div>
+                            <div class="campo">
+                                <h2>Remover Quantia</h2>
+                                <label for="rem-quantia">Remover: </label>
+                                <input type="number" name="valor-rem" required>
+                            </div>
+                            <input type="submit" value="Confirmar">
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -80,5 +113,6 @@
             </div>
         </article>
         <script src="/js/navbar.js"></script>
+        <script src="/js/reserva.js"></script>
     </body>
 </html>
