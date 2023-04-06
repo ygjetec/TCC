@@ -79,3 +79,7 @@ article .frase {
     justify-content: left;
     margin: 50px 50px;
 }
+
+.btn-vermais{
+    cursor: pointer;
+}

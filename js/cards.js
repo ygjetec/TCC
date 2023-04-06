@@ -55,3 +55,23 @@ function hideModal_rem() {
 }
 
 //Cards da tela de Balanços
+
+function showModal_gasto() {
+    var element = document.getElementById("modal_gasto");
+    element.classList.add("show-modal");
+}
+
+function hideModal_gasto() {
+    var element = document.getElementById("modal_gasto");
+    element.classList.remove("show-modal");
+}
+
+function showModal_recebido() {
+    var element = document.getElementById("modal_recebido");
+    element.classList.add("show-modal");
+}
+
+function hideModal_recebido() {
+    var element = document.getElementById("modal_recebido");
+    element.classList.remove("show-modal");
+}

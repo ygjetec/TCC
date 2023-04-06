@@ -72,10 +72,79 @@
                         <h2>Movimentações</h2>
                         <p>Registre suas movimentações para entender onde o seu dinheiro está sendo gasto</p>
                         <div class="btn">
-                            <button id="btn-recebido">Recebido</button>
-                            <button id="btn-gasto">Gasto</button>
+                            <button id="btn-recebido" onclick="showModal_recebido()">Recebido</button>
+                            <button id="btn-gasto" onclick="showModal_gasto()">Gasto</button>
+                        </div>
+
+                        <div class="modal" id="modal_gasto">
+                            <div class="modal-content">
+                                <form action="">
+                                    <div class="btn-fechar">
+                                        <input type="reset" value="X" id="fechar-card" onclick="hideModal_gasto()">
+                                    </div>
+                                    <h2>Gasto</h2>
+                                    <div class="campo">
+                                        <label for="titulo">Título: </label>
+                                        <input type="text" name="titulo-gasto">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="descricao">Descrição: </label>
+                                        <input type="text" name="descricao">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="valor">Valor: </label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="data">Data: </label>
+                                        <input type="date">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="categoria"></label>
+                                        <select name="categoria" id="categoria">
+                                            <option value="">
+    
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <input type="submit" value="Confirmar">
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="modal" id="modal_recebido">
+                            <div class="modal-content">
+                                <form action="">
+                                    <div class="btn-fechar">
+                                        <input type="reset" value="X" id="fechar-card" onclick="hideModal_recebido()">
+                                    </div>
+                                    <h2>Recebido</h2>
+                                    <div class="campo">
+                                        <label for="titulo">Título: </label>
+                                        <input type="text" name="titulo-gasto">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="descricao">Descrição: </label>
+                                        <input type="text" name="descricao">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="valor">Valor: </label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="data">Data: </label>
+                                        <input type="date">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="categoria"></label>
+                                    </div>
+                                    <input type="submit" value="Confirmar">
+                                </form>
+                            </div>
                         </div>
                     </div>
+
+                    
 
                     <div class="extrato">
                         <img src="/imgs/icon-extrato.svg" alt="Ícone de uma folha em preto e branco com um sinal de cifrão ao centro superior">
@@ -126,5 +195,6 @@
         </article>
 
         <script src="/js/navbar.js"></script>
+        <script src="/js/cards.js"></script>
     </body>
 </html>
