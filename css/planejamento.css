@@ -118,6 +118,11 @@ article {
     border-radius: 15px;
 }
 
+#planejamento {
+    width: 600px;
+    height: auto;
+}
+
 .modal-content h2 {
     margin-bottom: 30px;
     display: flex;
@@ -180,6 +185,12 @@ article {
 .cabecalho {
     display: flex;
     justify-content: space-between;
+}
+
+.cabecalho button {
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
 }
 
 .cabecalho img {

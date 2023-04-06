@@ -111,7 +111,32 @@
                             <img src="/imgs/icon-planejamento.svg" alt="Ícone preto e branco de caderneta com metas a serem cumpridas e um relógio">
                             <h2 id="tit-plan">Planejamento</h2>
                         </div>
-                        <a href="#"><img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de mais"></a>
+                        <button href="#" onclick="showModal_planejamento()">
+                            <img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de mais">
+                        </button>
+
+                        <div class="modal" id="modal_planejamento">
+                            <div class="modal-content" id="planejamento">
+                                <form action="">
+                                    <div class="btn-fechar" onclick="hideModal_planejamento()" >
+                                        <input type="reset" value="X" id="fechar-card">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="categoria">Categoria: </label>
+                                        <select name="categoria" id="categoria">
+                                            <option value="">
+
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="campo">
+                                        <label for="limite">Limite: </label>
+                                        <input type="number" name="limite">
+                                    </div>
+                                    <input type="submit" value="Confirmar">
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="quadro">
