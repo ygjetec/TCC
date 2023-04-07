@@ -30,7 +30,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     background: var(--cor05);
-    height: 11vh;
+    height: 13vh;
     margin-right: 5px;
 }
 
@@ -68,7 +68,7 @@ nav{
         top: 8vh;
         right: 0;
         width: 35vw;
-        height: 92vh;
+        height: 85vh;
         background: var(--cor05);
         flex-direction: column;
         align-items: center;
@@ -76,6 +76,7 @@ nav{
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: -1;
+        margin-top: 7vh;
     }
     .nav-list li {
         margin-left: 0;

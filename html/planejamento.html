@@ -57,7 +57,7 @@
                         <option value="Novembro">Novembro</option>
                         <option value="Dezembro">Dezembro</option>
                     </select> -->
-                    <input type="submit" value="Confirmar">
+                    <input type="submit" value="Confirmar" class="btn" id="btn-conf">
                 </form>
             </div>
 
@@ -73,9 +73,12 @@
                     <div class="valores-fixos">
                         <img src="/imgs/icon-fixado.svg" alt="Ícone de tarraxa em Preto e Branco">
                         <h2 id="titulo-valores-fixos">Valores Fixos</h2>
+                        <div id="">
+                            <button onclick="showModal_vlrfx()" class="btn" id="btn-addValorFixo">Adicionar Valor Fixo</button>
+                        </div>   
                     </div>
 
-                    <button onclick="showModal_vlrfx()">Adicionar Valor Fixo</button>
+                    
 
                     <div class="modal" id="modal_vlrfx">
                         <div class="modal-content">

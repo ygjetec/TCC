@@ -85,11 +85,41 @@ article {
 .valores-fixos {
     display: flex;
     margin: 10px 0 10px 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .valores-fixos #titulo-valores-fixos {
     padding: 10px;
     margin-left: 5px;
+}
+
+.btn{
+    cursor: pointer;
+    height: 37px;
+    width: 145px;
+    font-weight: bolder;
+}
+
+#btn-conf{
+    height: 25px;
+    width: 100px;
+}
+
+#btn-addValorFixo{
+    background-color: var(--cor06);
+    border: 2.5px solid black;
+    border-radius: 25px;
+}
+
+#btn-addValorFixo:hover{
+    background-color: white;
+    color: var(--cor06);
+    transition: 0.4s;
+    border: 2.5px solid var(--cor06);
+    height: 42px;
+    width: 150px;
+    font-weight: bolder;
 }
 
 
