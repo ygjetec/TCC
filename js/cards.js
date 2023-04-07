@@ -31,6 +31,18 @@ function hideModal_planejamento() {
     var element = document.getElementById("modal_planejamento");
     element.classList.remove("show-modal");
 }
+    //Funções para Adicionar e Remover campos no planejamento
+    var controleCampo = 1;
+    function adicionarCampo_planejamento() {
+        controleCampo++;
+        console.log(controleCampo);
+
+        document.getElementById('formulario').insertAdjacentHTML('beforeend','<div class="form-group" id="campo'+ controleCampo +'"><label for="categoria">Categoria: </label><select name="categoria[]" id="categoria1" required><option value=""></option></select> <label for="limite">Limite: </label><input type="number" name="limite[]" required> <button type="button" id="' +controleCampo+'" onclick="removerCampo_planejamento('+controleCampo+')">Remover Campo</</button></div>');
+    }
+
+    function removerCampo_planejamento(idCampo) {
+        document.getElementById('campo' + idCampo).remove();
+    }
 
 //Cards da tela de Reserva
 

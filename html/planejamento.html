@@ -121,17 +121,18 @@
                                     <div class="btn-fechar"  >
                                         <input onclick="hideModal_planejamento()" type="reset" value="X" id="fechar-card">
                                     </div>
-                                    <div class="campo">
-                                        <label for="categoria">Categoria: </label>
-                                        <select name="categoria" id="categoria">
-                                            <option value="">
-
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="campo">
-                                        <label for="limite">Limite: </label>
-                                        <input type="number" name="limite" required>
+                                    <div id="formulario">
+                                        <div class="form-group">
+                                            <label for="categoria">Categoria: </label>
+                                            <select name="categoria[]" id="categoria1" required>
+                                                <option value="">
+                                                </option>
+                                            </select>
+                                            <label for="limite">Limite: </label>
+                                            <input type="number" name="limite[]" required>
+                                            
+                                            <button type="button" onclick="adicionarCampo_planejamento()">Adicionar Categoria</button>
+                                        </div>
                                     </div>
                                     <input type="submit" value="Confirmar">
                                 </form>
