@@ -75,3 +75,13 @@ function hideModal_recebido() {
     var element = document.getElementById("modal_recebido");
     element.classList.remove("show-modal");
 }
+
+function showModal_criarcarteira() {
+    var element = document.getElementById("modal_criarcarteira");
+    element.classList.add("show-modal");
+}
+
+function hideModal_criarcarteira() {
+    var element = document.getElementById("modal_criarcarteira");
+    element.classList.remove("show-modal");
+}

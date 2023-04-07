@@ -177,9 +177,29 @@
                     <div class="tit-carteira">
                         <img src="/imgs/icon-carteira.svg" alt="Ícone de carteira">
                         <h2>Carteiras</h2>
-                        <button id="btn-criar">Criar</button>
+                        <button id="btn-criar" onclick="showModal_criarcarteira()">Criar</button>
                         <button id="btn-remover">Remover</button>
                     </div>
+
+                    <div class="modal" id="modal_criarcarteira">
+                        <div class="modal-content">
+                            <form action="">
+                                <div class="btn-fechar">
+                                    <input onclick="hideModal_criarcarteira()" type="reset" value="X" id="fechar-card">
+                                </div>
+                                <div class="campo">
+                                    <label for="titulo">Título da carteira: </label>
+                                    <input type="text" name="titulo" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="limite">Limite de gasto: </label>
+                                    <input type="number" name="limite" required>
+                                </div>
+                                <input type="submit" value="Confirmar">
+                            </form>
+                        </div>
+                    </div>
+
                     <div class="carteiras">
                         <div class="carteira">
                             <h2>Título Carteira</h2>
