@@ -37,7 +37,7 @@ function hideModal_planejamento() {
         controleCampo++;
         console.log(controleCampo);
 
-        document.getElementById('formulario').insertAdjacentHTML('beforeend','<div class="form-group" id="campo'+ controleCampo +'"><label for="categoria">Categoria: </label><select name="categoria[]" id="categoria1" required><option value=""></option></select> <label for="limite">Limite: </label><input type="number" name="limite[]" required> <button type="button" id="' +controleCampo+'" onclick="removerCampo_planejamento('+controleCampo+')">Remover Campo</</button></div>');
+        document.getElementById('formulario').insertAdjacentHTML('beforeend','<div class="form-group" id="campo'+ controleCampo +'"><label for="categoria">Categoria: </label><select name="categoria[]" id="categoria1" required><option value="alimentacao">Alimentação</option> <option value="casa">Casa</option> <option value="educacao">Educação</option>  <option value="eletronico">Eletrônicos</option> <option value="lazer">Lazer</option> <option value="mercado">Mercado</option> <option value="saude">Saúde</option> <option value="servico">Serviços</option> <option value="transporte">Transporte</option> <option value="vestuario">Vestuário</option> <option value="viagem">Viagens</option> <option value="outros">Outros</option> </select> <label for="limite">Limite: </label><input type="number" name="limite[]" required> <button type="button" id="' +controleCampo+'" onclick="removerCampo_planejamento('+controleCampo+')">Remover Campo</</button></div>');
     }
 
     function removerCampo_planejamento(idCampo) {
