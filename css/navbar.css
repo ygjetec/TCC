@@ -68,7 +68,7 @@ nav{
         top: 8vh;
         right: 0;
         width: 35vw;
-        height: 85vh;
+        height: 92vh;
         background: var(--cor05);
         flex-direction: column;
         align-items: center;
@@ -76,7 +76,6 @@ nav{
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: -1;
-        margin-top: 7vh;
     }
     .nav-list li {
         margin-left: 0;

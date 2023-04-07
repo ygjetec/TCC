@@ -77,11 +77,21 @@ article {
 #btn-add {
     background-color: var(--cor06);
     cursor: pointer;
+    font-weight: bolder;
 }
 
 #btn-add img {
     width: 35px;
     height: 35px;
+}
+
+#btn-add:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+    border: 3px solid var(--cor06);
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .modal {
@@ -102,9 +112,9 @@ article {
 }
 
 .modal-content {
-    background-color: white;
+    background-image: linear-gradient(to bottom, white, var(--cor05), var(--cor02));
     padding: 35px 25px;
-    width: 300px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
 }
@@ -114,12 +124,19 @@ article {
     cursor: pointer;
     padding: 3px;
     float: right;
-    background-color: lightgray;
+    background-color: white;
     border: none;
+    font-size: medium;
+    font-weight: bolder;
+    width: 26px;
+    height: 26px;
+    border: 2px solid black;
+    border-radius: 100px;
 }
 
 .modal-content #fechar-card:hover {
-    background-color: darkgray;
+    background-color: var(--cor08);
+    transition: 0.4s;
 }
 
 
@@ -134,6 +151,57 @@ article {
 
 .modal-content #options{
     margin-bottom: 65px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+
+.campo input{
+    font-size: larger;
+    border: 3px solid black;
+    border-radius: 25px;
+    height: 35px;
+    padding: 0px 10px;
+}
+
+#data{
+    cursor: pointer;
+}
+
+#options{
+    font-weight: bolder;
+}
+
+#nvl-prioridade{
+    cursor: pointer;
+    width: 300px;
+    font-size: larger;
+    border: 3px solid black;
+    border-radius: 25px;
+    height: 35px;
+    padding: 0px 5px;
+}
+
+#criar-meta{
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    margin: 0px auto;
+    background-color: white;
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#criar-meta:hover{
+    background-color: var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .show-modal {
