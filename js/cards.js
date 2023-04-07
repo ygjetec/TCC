@@ -97,3 +97,16 @@ function hideModal_criarcarteira() {
     var element = document.getElementById("modal_criarcarteira");
     element.classList.remove("show-modal");
 }
+
+    //Funções para Adicionar e Remover Carteiras nos Balanços
+    var controleCampo = 1;
+    function adicionarCarteira() {
+        controleCampo++;
+        console.log(controleCampo);
+
+        document.getElementById('formulario').insertAdjacentHTML('beforeend','<div class="form-group" id="campo'+ controleCampo +'"> <label for="titulo">Título da carteira: </label> <input type="text" name="titulo" required> <label for="limite">Limite de gasto: </label> <input type="number" name="limite" required> <button type="button" id="' +controleCampo+'" onclick="removerCarteira('+controleCampo+')">Remover Campo</</button></div>');
+    }
+
+    function removerCarteira(idCampo) {
+        document.getElementById('campo' + idCampo).remove();
+    }

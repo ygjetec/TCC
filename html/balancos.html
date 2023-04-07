@@ -187,13 +187,15 @@
                                 <div class="btn-fechar">
                                     <input onclick="hideModal_criarcarteira()" type="reset" value="X" id="fechar-card">
                                 </div>
-                                <div class="campo">
-                                    <label for="titulo">Título da carteira: </label>
-                                    <input type="text" name="titulo" required>
-                                </div>
-                                <div class="campo">
-                                    <label for="limite">Limite de gasto: </label>
-                                    <input type="number" name="limite" required>
+                                <div id="formulario">
+                                    <div class="form-group">
+                                        <label for="titulo">Título da carteira: </label>
+                                        <input type="text" name="titulo" required>
+                                        <label for="limite">Limite de gasto: </label>
+                                        <input type="number" name="limite" required>
+
+                                        <button type="button" onclick="adicionarCarteira()">Adicionar Carteira</button>
+                                    </div>
                                 </div>
                                 <input type="submit" value="Confirmar">
                             </form>
