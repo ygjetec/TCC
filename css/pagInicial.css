@@ -73,6 +73,47 @@ article .frase {
     justify-content: center;
 }
 
+.planejamento {
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor02), #F736B4, #F981CF);
+}
+
+.desc{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto {
+    font-size: 17px;
+    padding: 20px;
+}
+
+.balancos {
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor05), #4DC7F7, #98DDF9);
+    
+}
+
+.metas {
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor04), #4391F7, #8EBCF9);
+    
+}
+
+.reserva {
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor03), #3E5AF7, #899AF9);
+}
+
 .tit-section {
     display: flex;
     align-items: flex-start;
@@ -80,6 +121,8 @@ article .frase {
     margin: 50px 50px;
 }
 
-.btn-vermais{
+.ver-mais {
+    font-size: 20px;
     cursor: pointer;
+    border-bottom: 1px solid white;
 }

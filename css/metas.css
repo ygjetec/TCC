@@ -139,7 +139,7 @@ article {
     border-radius: 25px;
     background-image: linear-gradient(45deg, var(--cor05), var(--cor04), var(--cor03), black, var(--cor05), var(--cor04), var(--cor03));
     background-size: 300%;
-    animation: AnimarBorda 8s linear infinite;
+    animation: AnimarBorda 10s linear infinite;
 }
 
 @keyframes AnimarBorda {
