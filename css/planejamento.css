@@ -141,11 +141,82 @@ article {
 }
 
 .modal-content {
+    position: relative;
     background-color: white;
     padding: 35px 25px;
-    width: 300px;
+    width: 350px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 18px;
+}
+
+.caixa{
+    position: relative;
+    width: 292px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.caixa::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border-radius: 25px;
+    background-image: linear-gradient(45deg, var(--cor05), var(--cor04), var(--cor03), black, var(--cor05), var(--cor04), var(--cor03));
+    background-size: 300%;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+@keyframes AnimarBorda {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
+.caixa::after {
+    filter: blur(50px);
+}
+
+.caixa-2{
+    position: relative;
+    width: 582px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.caixa-2::before, .caixa-2::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border-radius: 25px;
+    background-image: linear-gradient(45deg, var(--cor05), var(--cor04), var(--cor03), black, var(--cor05), var(--cor04), var(--cor03));
+    background-size: 300%;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+@keyframes AnimarBorda {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
+.caixa-2::after {
+    filter: blur(50px);
 }
 
 #planejamento {
@@ -164,21 +235,152 @@ article {
     cursor: pointer;
     padding: 3px;
     float: right;
-    background-color: lightgray;
+    background-color: var(--cor08);
     border: none;
+    font-size: medium;
+    font-weight: bolder;
+    width: 26px;
+    height: 26px;
+    border: 2px solid black;
+    border-radius: 100px;
 }
 
 .modal-content #fechar-card:hover {
-    background-color: darkgray;
+    background-color: white;
+    border: 2px solid var(--cor08);
+    transition: 0.4s;
+}
+
+.modal-content #fechar-card-2 {
+    margin-bottom: 25px;
+    cursor: pointer;
+    padding: 3px;
+    float: right;
+    background-color: var(--cor08);
+    border: none;
+    font-size: medium;
+    font-weight: bolder;
+    width: 26px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+.modal-content #fechar-card-2:hover {
+    background-color: white;
+    border: 2px solid var(--cor08);
+    transition: 0.4s;
 }
 
 .modal-content form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+.form-group input{
+    font-size: small;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    padding: 0px 5px;
+}
+
+
+#categoria1{
+    font-size: small;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 145px;
+    height: 30px;
+    padding: 0px 5px;
 }
 
 .modal-content .campo {
     margin-bottom: 25px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+
+.campo input{
+    font-size: larger;
+    border: 3px solid black;
+    border-radius: 25px;
+    height: 35px;
+    padding: 0px 10px;
+}
+
+#formulario button{
+    cursor: pointer;
+    height: 30px;
+    width: 140px;
+    margin: 0px auto;
+    background-color: var(--cor08);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#formulario button:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor08);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: small;
+}
+
+#formulario #add-Categoria{
+    cursor: pointer;
+    height: 30px;
+    width: 140px;
+    margin: 0px auto;
+    background-color: var(--cor06);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#formulario #add-Categoria:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.btn-conf{
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    margin: 0px auto;
+    background-color: var(--cor06);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#conf{
+    margin-top: 10px;
+}
+
+.btn-conf:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .show-modal {
