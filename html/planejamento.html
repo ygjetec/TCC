@@ -57,7 +57,7 @@
                         <option value="Novembro">Novembro</option>
                         <option value="Dezembro">Dezembro</option>
                     </select> -->
-                    <input type="submit" value="Confirmar" class="btn" id="btn-conf">
+                    <input type="submit" value="Confirmar" class="btn-conf">
                 </form>
             </div>
 
@@ -81,22 +81,24 @@
                     
 
                     <div class="modal" id="modal_vlrfx">
-                        <div class="modal-content">
-                            <form action="">
-                                <div class="btn-fechar">
-                                    <input onclick="hideModal_vlrfx()" type="reset" value="X" id="fechar-card">
-                                </div>
-                                <h2>Valor Fixo</h2>
-                                <div class="campo">
-                                    <label for="titulo">Título: </label>
-                                    <input type="text" name="titulo">
-                                </div>
-                                <div class="campo">
-                                    <label for="valor">Valor: </label>
-                                    <input type="number" name="valor">
-                                </div>
-                                <input type="submit" value="Confirmar">
-                            </form>
+                        <div class="caixa">
+                            <div class="modal-content">
+                                <form action="">
+                                    <div class="btn-fechar">
+                                        <input onclick="hideModal_vlrfx()" type="reset" value="X" id="fechar-card">
+                                    </div>
+                                    <h2>Valor Fixo</h2>
+                                    <div class="campo">
+                                        <label for="titulo">Título: </label>
+                                        <input type="text" name="titulo">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="valor">Valor: </label>
+                                        <input type="number" name="valor">
+                                    </div>
+                                    <input type="submit" value="Confirmar" class="btn-conf">
+                                </form>
+                            </div>
                         </div>
                     </div>
 
@@ -119,36 +121,38 @@
                         </button>
 
                         <div class="modal" id="modal_planejamento">
-                            <div class="modal-content" id="planejamento">
-                                <form action="">
-                                    <div class="btn-fechar"  >
-                                        <input onclick="hideModal_planejamento()" type="reset" value="X" id="fechar-card">
-                                    </div>
-                                    <div id="formulario">
-                                        <div class="form-group">
-                                            <label for="categoria">Categoria: </label>
-                                                <select name="categoria[]" id="categoria1" required>
-                                                    <option value="alimentacao">Alimentação</option>
-                                                    <option value="casa">Casa</option>
-                                                    <option value="educacao">Educação</option>
-                                                    <option value="eletronico">Eletrônicos</option>
-                                                    <option value="lazer">Lazer</option>
-                                                    <option value="mercado">Mercado</option>
-                                                    <option value="saude">Saúde</option>
-                                                    <option value="servico">Serviços</option>
-                                                    <option value="transporte">Transporte</option>
-                                                    <option value="vestuario">Vestuário</option>
-                                                    <option value="viagem">Viagens</option>
-                                                    <option value="outros">Outros</option>
-                                                </select>
-                                            <label for="limite">Limite: </label>
-                                            <input type="number" name="limite[]" required>
-                                            
-                                            <button type="button" onclick="adicionarCampo_planejamento()">Adicionar Categoria</button>
+                            <div class="caixa-2">
+                                <div class="modal-content" id="planejamento">
+                                    <form action="">
+                                        <div class="btn-fechar"  >
+                                            <input onclick="hideModal_planejamento()" type="reset" value="X" id="fechar-card-2">
                                         </div>
-                                    </div>
-                                    <input type="submit" value="Confirmar">
-                                </form>
+                                        <div id="formulario">
+                                            <div class="form-group">
+                                                <label for="categoria" class="info-planjm">Categoria: </label>
+                                                    <select name="categoria[]" id="categoria1" required>
+                                                        <option value="alimentacao">Alimentação</option>
+                                                        <option value="casa">Casa</option>
+                                                        <option value="educacao">Educação</option>
+                                                        <option value="eletronico">Eletrônicos</option>
+                                                        <option value="lazer">Lazer</option>
+                                                        <option value="mercado">Mercado</option>
+                                                        <option value="saude">Saúde</option>
+                                                        <option value="servico">Serviços</option>
+                                                        <option value="transporte">Transporte</option>
+                                                        <option value="vestuario">Vestuário</option>
+                                                        <option value="viagem">Viagens</option>
+                                                        <option value="outros">Outros</option>
+                                                    </select>
+                                                <label for="limite">Limite: </label>
+                                                <input type="number" name="limite[]" class="info-limt" required>
+                                
+                                                <button type="button" onclick="adicionarCampo_planejamento()" id="add-Categoria">Adicionar Categoria</button>
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="Confirmar" class="btn-conf" id="conf">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
