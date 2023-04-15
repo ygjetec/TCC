@@ -19,7 +19,7 @@
             <div class="content first-content">
                 <div class="first-column">
                     <h2 class="title">Bem vindo de volta!</h2>
-                    <p class="description description-primary">Por favor insira suas informações pessoais para efetuar o login</p>
+                    <p class="description description-primary">Se você já tem uma conta, clique no botão abaixo para efetuar o login.</p>
                     <button id="signin" class="btn btn-primary">Login</button>
                 </div>
                 <div class="second-column">
@@ -73,25 +73,22 @@
                     <button id="signup" class="btn btn-primary">Cadastro</button>
                 </div>
                 <div class="second-column">
-                    <h2 class="title title-primary" >Login</h2>
-                    <p class="description description-primary" id="desc_2">Insira suas informações para logar em sua conta</p>
-                    <form action="" class="form cont_login">
+                    <h2 class="title title-primary">Login</h2>
+                    <p class="description description-primary" id="desc_2">Preencha os campos abaixo para realizar o login</p>
+                    <form action="login.php" class="form cont_login">
                         <div class="info">
                             <img src="/imgs/icon-email.svg" alt="Ícone email em preto e branco" class="icon">
-                            <label class="label-input" for="">
-                                <input class="input_login" type="email" placeholder="Email">
-                            </label>
+                            <label class="label-input" for="email"></label>
+                            <input class="input_login" type="email" placeholder="Email">
                         </div>
                         <div class="info">
                             <img src="/imgs/icon-chave.svg" alt="Ícone de uma chave em preto e branco" class="icon">
-                            <label class="label-input" for="">
-                                <input class="input_login" type="password" placeholder="Senha">
-                            </label>
+                            <label class="label-input" for="senha"></label>
+                            <input class="input_login" type="password" placeholder="Senha">
                         </div>
-                        
-                        <a href="#">Esqueceu sua senha? Clique aqui para redefini-lá</a>
-                        <button class="btn btn-primary btn_entra"> Entrar</button>
+                        <input type="submit" class="btn btn-primary btn_entra" value="Entrar"></input>
                     </form>
+                    <a href="#">Esqueceu sua senha? Clique aqui para redefini-lá</a>
                 </div>
             </div>
         </div>

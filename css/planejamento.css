@@ -151,8 +151,8 @@ article {
 
 .caixa{
     position: relative;
-    width: 292px;
-    height: 360px;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
