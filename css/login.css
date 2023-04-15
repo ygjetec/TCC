@@ -229,8 +229,7 @@ input{
 
 .sexo{
     display: flex;
-    width: 1px;
-    height: 1.6rem;
+    width: 20px;
 }
 
 #m{
@@ -240,6 +239,9 @@ input{
 #f{
     display: flex;
     align-items: center; 
+}
+
+#sfemi{
     margin-left: 10px;
 }
 
