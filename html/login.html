@@ -25,24 +25,28 @@
                 <div class="second-column">
                     <h2 class="title title-second" id="criar_conta">Criar Conta</h2>
                     <p class="description description-second" id="desc_1">Insira suas informações para criar uma conta</p>
-                    <form action="" class="form">
+                    <form action="cadastro.php" class="form">
                         <div class="info_1">
                             <div class="info">
                                 <img src="/imgs/icon-usuario.svg" alt="Ícone de Usuário Em Preto e Branco" class="icon">
+                                <label for="nome"></label>
                                 <input type="text" placeholder="Nome">
                             </div>
                             <div class="info">
                                 <img src="/imgs/icon-email.svg" alt="Ícone email em preto e branco" class="icon">
+                                <label for="email"></label>
                                 <input type="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="info_2">
                             <div class="info">
                                 <img src="/imgs/icon-chave.svg" alt="Ícone de uma chave em preto e branco" class="icon">
+                                <label for="senha"></label>
                                 <input type="password" placeholder="Senha">
                             </div>
                             <div class="info">
                                 <img src="/imgs/icon-calendario.svg" alt="Ícone Calendário em Preto e Branco" class="icon">
+                                <label for="datanasc"></label>
                                 <input type="text" placeholder="Data de Nascimento">
                             </div>
                         </div>
@@ -51,18 +55,13 @@
                         <div class="info_3">
                             <p><strong>Sexo:</strong></p>
                             <div class="sexo">
-                                <label for="Masculino" id="m">
-                                    <input type="radio" id="smasc" name="sexo" value="Masculino">Masculino
-                                </label>
-                            
-                                <label for="Feminino" id="f">
-                                    <input type="radio" id="sfemi" name="sexo" value="Feminino">Feminino
-                                </label>
+                                <label for="Masculino" id="m">Masculino</label>
+                                <input type="radio" id="smasc" name="sexo" value="Masculino">
+                                <label for="Feminino" id="f">Feminino</label>
+                                <input type="radio" id="sfemi" name="sexo" value="Feminino">
                             </div>
                         </div>
-                        
-
-                        <button class="btn btn-second">Criar Conta</button>
+                        <input type="submit" class="btn btn-second" value="Criar Conta"></input>
                     </form>
                 </div>
             </div>
