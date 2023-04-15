@@ -2,7 +2,7 @@
 $host = "localhost";
 $banco = "tcc";
 $usuario = "root";
-$senha = "";
+$senha = "root";
 
 /* $host = "bdmakeendsmeet.mysql.dbaas.com.br";
 $banco = "bdmakeendsmeet";
