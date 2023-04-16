@@ -38,11 +38,11 @@
 
         <article>
             <div class="campoMes">
-                <img src="/imgs/icon-calendario.svg" alt="Ícone Calendário em Preto e Branco">
+                <img src="/imgs/icon-calendario.svg" alt="Ícone Calendário em Preto e Branco" id="img-calendario">
                 <!--<h2 id="mesReferente">Mês Referente</h2> -->
-                    <form action="mes-referente">
-                        <label for="meses"> Mês Referente: </label>
-                        <input type="month" name="mes-referente">
+                    <form action="mes-referente" id="mes-Referente">
+                        <label for="meses" id="meses"> Mês Referente: </label>
+                        <input type="month" name="mes-referente" id="month">
                         <!-- <select name="mes" id="meses">
                             <option value="Janeiro">Janeiro</option>
                             <option value="Fevereiro">Fevereiro</option>
@@ -57,7 +57,7 @@
                             <option value="Novembro">Novembro</option>
                             <option value="Dezembro">Dezembro</option>
                         </select> -->
-                        <input type="submit">
+                        <input type="submit" class="btn-enviar">
                     </form>
             </div>
 
@@ -77,78 +77,82 @@
                         </div>
 
                         <div class="modal" id="modal_gasto">
-                            <div class="modal-content">
-                                <form action="">
-                                    <div class="btn-fechar">
-                                        <input type="reset" value="X" id="fechar-card" onclick="hideModal_gasto()">
-                                    </div>
-                                    <h2>Gasto</h2>
-                                    <div class="campo">
-                                        <label for="titulo">Título: </label>
-                                        <input type="text" name="titulo-gasto">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="descricao">Descrição: </label>
-                                        <input type="text" name="descricao">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="valor">Valor: </label>
-                                        <input type="number">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="data">Data: </label>
-                                        <input type="date">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="categoria">Categoria: </label>
-                                            <select name="categoria[]" id="categoria1" required>
-                                                <option value="alimentacao">Alimentação</option>
-                                                <option value="casa">Casa</option>
-                                                <option value="educacao">Educação</option>
-                                                <option value="eletronico">Eletrônicos</option>
-                                                <option value="lazer">Lazer</option>
-                                                <option value="mercado">Mercado</option>
-                                                <option value="saude">Saúde</option>
-                                                <option value="servico">Serviços</option>
-                                                <option value="transporte">Transporte</option>
-                                                <option value="vestuario">Vestuário</option>
-                                                <option value="viagem">Viagens</option>
-                                                <option value="outros">Outros</option>
-                                            </select>
-                                    </div>
-                                    <input type="submit" value="Confirmar">
-                                </form>
+                            <div class="caixa">
+                                <div class="modal-content">
+                                    <form action="">
+                                        <div class="btn-fechar">
+                                            <input type="reset" value="X" id="fechar-card" onclick="hideModal_gasto()">
+                                        </div>
+                                        <h2>Gasto</h2>
+                                        <div class="campo">
+                                            <label for="titulo">Título: </label>
+                                            <input type="text" name="titulo-gasto">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="descricao">Descrição: </label>
+                                            <input type="text" name="descricao">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="valor">Valor: </label>
+                                            <input type="number">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="data">Data: </label>
+                                            <input type="date">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="categoria">Categoria: </label>
+                                                <select name="categoria[]" id="categoria1" required>
+                                                    <option value="alimentacao">Alimentação</option>
+                                                    <option value="casa">Casa</option>
+                                                    <option value="educacao">Educação</option>
+                                                    <option value="eletronico">Eletrônicos</option>
+                                                    <option value="lazer">Lazer</option>
+                                                    <option value="mercado">Mercado</option>
+                                                    <option value="saude">Saúde</option>
+                                                    <option value="servico">Serviços</option>
+                                                    <option value="transporte">Transporte</option>
+                                                    <option value="vestuario">Vestuário</option>
+                                                    <option value="viagem">Viagens</option>
+                                                    <option value="outros">Outros</option>
+                                                </select>
+                                        </div>
+                                        <input type="submit" value="Confirmar" class="btn-conf">
+                                    </form>
+                                </div>
                             </div>
                         </div>
     
                         <div class="modal" id="modal_recebido">
-                            <div class="modal-content">
-                                <form action="">
-                                    <div class="btn-fechar">
-                                        <input type="reset" value="X" id="fechar-card" onclick="hideModal_recebido()">
-                                    </div>
-                                    <h2>Recebido</h2>
-                                    <div class="campo">
-                                        <label for="titulo">Título: </label>
-                                        <input type="text" name="titulo-gasto">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="descricao">Descrição: </label>
-                                        <input type="text" name="descricao">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="valor">Valor: </label>
-                                        <input type="number">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="data">Data: </label>
-                                        <input type="date">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="categoria"></label>
-                                    </div>
-                                    <input type="submit" value="Confirmar">
-                                </form>
+                            <div class="caixa">
+                                <div class="modal-content">
+                                    <form action="">
+                                        <div class="btn-fechar">
+                                            <input type="reset" value="X" id="fechar-card" onclick="hideModal_recebido()">
+                                        </div>
+                                        <h2>Recebido</h2>
+                                        <div class="campo">
+                                            <label for="titulo">Título: </label>
+                                            <input type="text" name="titulo-gasto">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="descricao">Descrição: </label>
+                                            <input type="text" name="descricao">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="valor">Valor: </label>
+                                            <input type="number">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="data">Data: </label>
+                                            <input type="date">
+                                        </div>
+                                        <div class="campo">
+                                            <label for="categoria"></label>
+                                        </div>
+                                        <input type="submit" value="Confirmar" class="btn-conf">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,23 +195,24 @@
                     </div>
 
                     <div class="modal" id="modal_criarcarteira">
-                        <div class="modal-content">
-                            <form action="">
-                                <div class="btn-fechar">
-                                    <input onclick="hideModal_criarcarteira()" type="reset" value="X" id="fechar-card">
-                                </div>
-                                <div id="formulario">
-                                    <div class="form-group">
-                                        <label for="titulo">Título da carteira: </label>
-                                        <input type="text" name="titulo" required>
-                                        <label for="limite">Limite de gasto: </label>
-                                        <input type="number" name="limite" required>
-
-                                        <button type="button" onclick="adicionarCarteira()">Adicionar Carteira</button>
+                        <div class="caixa">
+                            <div class="modal-content modal-content-carteira">
+                                <form action="">
+                                    <div class="btn-fechar">
+                                        <input onclick="hideModal_criarcarteira()" type="reset" value="X" id="fechar-card">
                                     </div>
-                                </div>
-                                <input type="submit" value="Confirmar">
-                            </form>
+                                    <div id="formulario">
+                                        <div class="form-group">
+                                            <label for="titulo">Título da carteira: </label>
+                                            <input type="text" name="titulo" required>
+                                            <label for="limite">Limite de gasto: </label>
+                                            <input type="number" name="limite" required>
+                                            <button type="button" onclick="adicionarCarteira()" id="add-Categoria">Adicionar Carteira</button>
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="Confirmar" class="btn-conf">
+                                </form>
+                            </div>
                         </div>
                     </div>
 

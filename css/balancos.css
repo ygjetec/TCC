@@ -63,10 +63,48 @@ article {
     margin: 0 50px 50px 50px;
 }
 
-#mesReferente {
-    border: 1px solid black;
+#img-calendario{
+    width: 45px;
+    margin-right: 5px;
+}
+
+#mes-Referente {
+    display: flex;
     padding: 10px;
     margin: 5px;
+    align-items: center;
+}
+
+#meses{
+    font-weight: bold;
+    font-size: larger ;
+}
+
+#month{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 7px 10px;
+    margin-left: 5px;
+}
+
+.btn-enviar{
+    cursor: pointer;
+    height: 33px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: var(--cor06);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+.btn-enviar:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .conteudo {
@@ -94,6 +132,7 @@ article {
     height: 30px;
     margin-left: 7px;
     border: 2px solid black;
+    border-radius: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -125,38 +164,36 @@ article {
 
 #btn-recebido {
     width: 150px;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     background-color: var(--cor06);
     cursor: pointer;
 }
 
 #btn-recebido:hover{
-    width: 160px;
-    height: 55px;
     background-color: white;
     color: var(--cor06);
     border: 4px solid var(--cor06);
     transition: 0.4s;
     font-weight: bolder;
+    font-size: medium;
 }
 
 #btn-gasto {
     width: 150px;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     background-color: var(--cor08);
     cursor: pointer;
 }
 
 #btn-gasto:hover{
-    width: 160px;
-    height: 55px;
     background-color: white;
     color: var(--cor08);
     border: 4px solid var(--cor08);
     transition: 0.4s;
     font-weight: bolder;
+    font-size: medium;
 }
 
 .modal {
@@ -176,35 +213,188 @@ article {
     transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
 }
 
+.caixa{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.caixa::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border-radius: 25px;
+    background-image: linear-gradient(45deg, var(--cor05), var(--cor04), var(--cor03), black, var(--cor05), var(--cor04), var(--cor03));
+    background-size: 300%;
+    animation: AnimarBorda 8s linear infinite;
+}
+
+@keyframes AnimarBorda {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
+.caixa::after {
+    filter: blur(50px);
+}
+
+
 .modal-content {
     background-color: white;
-    padding: 35px 25px;
-    width: 300px;
+    padding: 20px 20px;
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.modal-content-carteira {
+    background-color: white;
+    padding: 20px 20px;
+    width: 670px;
     height: auto;
     border-radius: 15px;
 }
 
 .modal-content #fechar-card {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     cursor: pointer;
     padding: 3px;
     float: right;
-    background-color: lightgray;
+    background-color: var(--cor08);
     border: none;
+    font-size: medium;
+    font-weight: bolder;
+    width: 26px;
+    height: 26px;
+    border: 2px solid black;
+    border-radius: 100px;
 }
 
 .modal-content #fechar-card:hover {
-    background-color: darkgray;
+    background-color: white;
+    border: 2px solid var(--cor08);
+    transition: 0.4s;
 }
-
 
 .modal-content form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+#formulario button{
+    cursor: pointer;
+    height: 30px;
+    width: 140px;
+    margin: 0px auto;
+    background-color: var(--cor08);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#formulario button:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor08);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: small;
+}
+
+#formulario #add-Categoria{
+    cursor: pointer;
+    height: 30px;
+    width: 140px;
+    margin: 0px auto;
+    background-color: var(--cor06);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+#formulario #add-Categoria:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+.form-group input{
+    font-size: small;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    padding: 0px 5px;
+}
+
+.form-group label{
+    font-weight: bolder;
 }
 
 .modal-content .campo {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+
+.campo input{
+    font-size: larger;
+    border: 3px solid black;
+    border-radius: 25px;
+    height: 35px;
+    padding: 0px 10px;
+}
+
+#categoria1{
+    font-size: small;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 310px;
+    height: 30px;
+    padding: 0px 5px;
+}
+
+
+.btn-conf{
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    margin: 10px auto 0px;
+    background-color: var(--cor06);
+    border: 2.5px solid black;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+.btn-conf:hover{
+    background-color: white;
+    border: 2.5px solid var(--cor06);
+    transition: 0.4s;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .modal-content #options{
@@ -236,8 +426,6 @@ article {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100px;
-    height: 60px;
     background-color: var(--cor02);
     border-radius: 20px;
 
@@ -246,16 +434,21 @@ article {
 
 .extrato img {
     margin: 8px;
+    width: 45px;
+}
+
+#btn-extrato{
+    width: 110px;
+    height: 35px;
 }
 
 #btn-extrato:hover{
-    width: 110px;
-    height: 55px;
     background-color: white;
     color: var(--cor02);
     border: 4px solid var(--cor02);
     transition: 0.4s;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: medium;
 }
 
 .coluna2 {
@@ -331,6 +524,7 @@ article {
 
 .tit-carteira img {
     padding-right: 15px;
+    width: 60px;
 }
 
 .carteiras {
@@ -361,9 +555,9 @@ article {
 }
 
 #btn-criar {
-    width: 80px;
-    height: 40px;
-    border: 3px solid black;
+    width: 90px;
+    height: 41px;
+    border: 2px solid black;
     border-radius: 25px;
     background-color: var(--cor06);
     cursor: pointer;
@@ -371,20 +565,18 @@ article {
 }
 
 #btn-criar:hover{
-    width: 85px;
-    height: 45px;
     background-color: white;
     color: var(--cor06);
     border: 4px solid var(--cor06);
     transition: 0.4s;
     font-weight: bolder;
-    font-weight: bolder;
+    font-size: medium;
 }
 
 #btn-remover {
-    width: 70px;
-    height: 30px;
-    border: 3px solid black;
+    width: 90px;
+    height: 40px;
+    border: 2px solid black;
     border-radius: 25px;
     background-color: var(--cor08);
     cursor: pointer;
@@ -392,11 +584,10 @@ article {
 }
 
 #btn-remover:hover{
-    width: 75px;
-    height: 35px;
     background-color: white;
     color: var(--cor08);
     border: 4px solid var(--cor08);
     transition: 0.4s;
     font-weight: bolder;
+    font-size: medium;
 }
