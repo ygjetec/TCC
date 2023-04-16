@@ -19,13 +19,13 @@
 
 header .elementos {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     /*Quebra com 465px*/
-
     text-align: center;
     position: fixed;
     min-width: 100%;
+    height: inherit;
 }
 
 header img {
@@ -40,10 +40,6 @@ header {
     text-align: center;
     position: fixed;
     min-width: 100%;
-}
-
-header h1 {
-    padding: 37px;
 }
 
 body {

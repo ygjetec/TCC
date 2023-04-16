@@ -31,7 +31,7 @@ nav{
     align-items: center;
     background: var(--cor05);
     height: 12vh;
-    margin-right: 5px;
+    margin: auto 5px auto 0;
 }
 
 .nav-list{
