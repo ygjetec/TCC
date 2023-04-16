@@ -18,7 +18,7 @@
 }
 
 header {
-    background-color: var(--cor05);
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor04), var(--cor03));
     height: 124px;
     text-align: center;
     min-width: 100%;
@@ -115,7 +115,7 @@ body {
     width: 150px;
     align-self: center;
     border: none;
-    margin-top: 1rem;
+    margin-top: 5px;
 }
 .btn-primary {
     background-color: transparent;
@@ -167,6 +167,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: aparecer 1.3s;
 }
 .social-media {
     margin: 1rem 0;
@@ -206,6 +207,17 @@ body {
     border: none;
     background-color: #ecf0f1;
 }
+
+.form .btn-second, .form .btn-primary{
+    background-color: var(--cor04);
+    width: 150px;
+    height: 35px;
+}
+
+.form .btn-second:hover, .form .btn-primary:hover{
+    background-color: white;
+}
+
 
 input{
     border-radius: 15px;
@@ -342,10 +354,32 @@ a{
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s; 
+    animation: deslocamentoDir 1.5s;
 }
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.01;
+    }
+
+    75%{
+        opacity: 0.3;
+    }
+
+    85%{
+        opacity: 0.5;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
 
 @keyframes deslocamentoEsq {
 
@@ -362,7 +396,7 @@ a{
 
     50% {
         left: -100px;
-        opacity: .1;
+        opacity: 0;
 
     }
 
@@ -384,12 +418,12 @@ a{
 
     25% {
         left: 80px;
-        pacity: .2;
+        opacity: .2;
     }
 
     50% {
         left: 100px;
-        pacity: .1;
+        opacity: 0;
     }
 
     to {
@@ -409,21 +443,6 @@ a{
         width: 40%;
     }
 
-    25% {
-        left: 5%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 45%;
-        width: 50%;
-    }
-
     to {
         left: 60%;
         width: 40%;
@@ -435,21 +454,6 @@ a{
     from {
         left: 60%;
         width: 40%;
-    }
-
-    25% {
-        left: 45%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
-        width: 50%;
     }
 
     to {
@@ -531,18 +535,18 @@ a{
 
         from {
             top: 0;
-            opacity: .3;
+            opacity: .2;
             z-index: 12;
         }
     
         25% {
             top: -80px;
-            opacity: .2;
+            opacity: .1;
         }
     
         50% {
             top: -100px;
-            opacity: .1;
+            opacity: .01;
         }
     
         to {
@@ -557,18 +561,18 @@ a{
     
         from {
             top: 0;
-            opacity: .3;
+            opacity: .2;
             z-index: 12;
         }
     
         25% {
             top: 80px;
-            opacity: .2;
+            opacity: .1;
         }
     
         50% {
             top: 100px;
-            opacity: .1;
+            opacity: .01;
         }
     
         to {
@@ -587,7 +591,7 @@ a{
             height: 40%;
         }
     
-        25% {
+        /* 25% {
             top: 5%;
             height: 50%;
         }
@@ -600,7 +604,7 @@ a{
         75% {
             top: 45%;
             height: 50%;
-        }
+        } */
     
         to {
             top: 60%;
@@ -615,7 +619,7 @@ a{
             height: 40%;
         }
     
-        25% {
+        /* 25% {
             top: 45%;
             height: 50%;
         }
@@ -628,7 +632,7 @@ a{
         75% {
             top: 5%;
             height: 50%;
-        }
+        } */
     
         to {
             top: 0;
