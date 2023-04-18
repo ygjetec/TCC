@@ -1,37 +1,41 @@
 <?php
-session_start();
+    
+    include "connect.php";
 
-include "connect.php";
+    $conn = mysqli_connect($host, $usuario, $senha, $banco);
 
-$conn = mysqli_connect($host, $usuario, $senha, $banco);
+    if(isset($_POST['email']) && isset($_POST['senha'])){
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
 
-$logar = $sql->query("SELECT * FROM usuario WHERE email='$email' AND senha='$senha'");
-while ($linha = mysqli_fetch_array($logar)) {
-    $email = $email['email'];
-    $senha = $senha['senha'];
-}
+        $get = $conn -> query("SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha'");
+        $num = mysqli_num_rows($get);
 
-$contagem = mysqli_num_rows($logar);
+        if($num == 1){
+            while($percore = mysqli_fetch_array($get)){
+                $tipo_usuario = $percore['tipo_usuario'];
+                $usuario = $percore['usuario'];
 
-if ($contagem == 1 and $tipo == 1) {
-    $_SESSION['email_session'] = $login;
-    $_SESSION['senha_session'] = $senha;
+                session_start();
 
-    header("location: pagInicial.html");
+                if($tipo_usuario == 1){
+                    $_SESSION['adm'] = $usuario;
 
-} elseif ($contagem == 1 and $tipo == 2) {
-    // usuario super(trocar)
-    $_SESSION['login_session'] = $login;
-    $_SESSION['senha_session'] = $senha;
+                    header("location: listar.php");
+                    
+                }else{
+                    $_SESSION['nor'] = $usuario;
 
-    header("location: listar.php");
+                    header("location: pagInicial.html");
+                }
 
-} else {
+                
+            }
+        }else{
+            echo'O email ou senha digitados estão errados.';
 
-    unset($_SESSION['login_session']);
-    unset($_SESSION['senha_session']);
+            header("Refresh: 2; url=login.php");
+        }
 
-    // criar pag erro de login
-}
-
+    }
 ?>
