@@ -50,13 +50,15 @@ body {
 article {
     padding-top: 167px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .cont-esq {
     display: flex;
     flex-direction: column;
-    margin: 0 60px 0 50px;
+    /* margin: 0 60px 0 50px; */
 }
 
 #campo-1 {
@@ -260,7 +262,7 @@ article {
 .cont-dir{
     display: flex;
     flex-direction: column;
-    margin: 0 50px 0 60px;
+    /* margin: 0 50px 0 60px; */
 }
 
 #campo-2 {
@@ -298,7 +300,7 @@ article {
 
 .ult-mov {
     width: 720px;
-    height: 350px;
+    height: 340px;
     background-color: lightgrey;
 }
 
@@ -319,4 +321,40 @@ article {
 
 #mov-neg {
     color: #FF5A54;
+}
+
+@media screen and (max-width: 1821px) {
+    .cont-dir, .cont-esq{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    
+    .ult-mov, #campo-2, #campo-3, #campo-4{
+        width: 660px;
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+    .cont-dir{
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ult-mov, .grafico, .btns, #campo-1, #campo-2, #campo-3, #campo-4{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .ult-mov, .grafico, .btns, #campo-1, #campo-2, #campo-3, #campo-4{
+        width: 300px;
+    }
+
+    .cont-esq button{
+        width: 130px;
+    }
 }
