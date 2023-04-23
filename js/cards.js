@@ -104,7 +104,7 @@ function hideModal_criarcarteira() {
         controleCampo++;
         console.log(controleCampo);
 
-        document.getElementById('formulario').insertAdjacentHTML('beforeend','<div class="form-group" id="campo'+ controleCampo +'"> <label for="titulo">Título da carteira: </label> <input type="text" name="titulo" required> <label for="limite">Limite de gasto: </label> <input type="number" name="limite" required> <button type="button" id="' +controleCampo+'" onclick="removerCarteira('+controleCampo+')">Remover Campo</</button></div>');
+        document.getElementById('formulario').insertAdjacentHTML('beforeend','<div class="form-group" id="campo'+ controleCampo +'"> <div><label for="titulo">Título da carteira: </label> <input type="text" name="titulo" required></div> <div><label for="limite">Limite de gasto: </label> <input type="number" name="limite" required></div> <button type="button" id="' +controleCampo+'" onclick="removerCarteira('+controleCampo+')">Remover Campo</</button></div>');
     }
 
     function removerCarteira(idCampo) {

@@ -263,9 +263,11 @@ article {
 .modal-content-carteira {
     background-color: white;
     padding: 20px 20px;
-    width: 670px;
+    width: auto;
     height: auto;
+    max-height: 50vh;
     border-radius: 15px;
+    overflow: auto;
 }
 
 .modal-content #fechar-card {
@@ -293,6 +295,10 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#formulario{
+    width: 630px;
 }
 
 #formulario button{
@@ -336,6 +342,7 @@ article {
 }
 
 .form-group{
+    display: flex;
     margin-top: 10px;
 }
 
@@ -614,4 +621,52 @@ article {
     .disp-categoria, .quadro-ult-gasto{
         width: 75vw;
     }
+}
+
+@media screen and (max-width: 720px){
+
+    .caixa{
+        margin: 0 5vw;
+    }
+    .modal-content-carteira{
+        width: auto;
+        margin: 0;
+        align-items: center;
+    }
+    #formulario{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .form-group div{
+        width: 243px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    #formulario button, #formulario #add-Categoria{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 622px) {
+
+    .form-group{
+        flex-direction: column;
+    }
+    
 }
