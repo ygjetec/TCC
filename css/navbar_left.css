@@ -130,3 +130,9 @@ a:hover{
     transform: rotate(45deg) translate(-5px, -7px);
     opacity: 0;
 }
+
+@media screen and (max-width: 650px) {
+    .nav-list_left{
+        width: 50vw;
+    }
+}
