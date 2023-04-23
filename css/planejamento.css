@@ -142,7 +142,9 @@ article {
     padding: 35px 25px;
     width: 350px;
     height: auto;
+    max-height: 50vh;
     border-radius: 18px;
+    overflow: auto;
 }
 
 .caixa{

@@ -93,10 +93,6 @@ a:hover{
         opacity: 0;
     }
 
-    .mobile-menu_left{
-        /* display: block; */
-    }
-
     .nav-list_left.active{
         transform: translateX(-7%);
     }
