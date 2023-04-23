@@ -47,16 +47,18 @@ body {
 }
 
 article {
-    padding-top: 167px;
+    padding-top: 13vh;
     display: flex;
     flex-direction: column;
 }
 
 .campoMes{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 50px 50px 50px;
+    margin: 0 auto 30px auto;
 }
 
 #img-calendario{
@@ -66,6 +68,9 @@ article {
 
 #mes-Referente {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 10px;
     margin: 5px;
     align-items: center;
@@ -105,7 +110,9 @@ article {
 
 .conteudo {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 0 50px 50px 50px;
 }
 
@@ -586,4 +593,25 @@ article {
     transition: 0.4s;
     font-weight: bolder;
     font-size: medium;
+}
+
+@media screen and (max-width: 1633px) {
+
+    .coluna3{
+        margin: 20px auto;
+    }
+    .carteiras{
+        width: 75vw;
+    }
+    
+}
+
+@media screen and (max-width: 1133px) {
+
+    .coluna2{
+        margin: 30px auto;
+    }
+    .disp-categoria, .quadro-ult-gasto{
+        width: 75vw;
+    }
 }
