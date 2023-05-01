@@ -44,10 +44,10 @@ header .elementos {
     align-items: center;
     justify-content: space-between;
     /*Quebra com 465px*/
-    text-align: center;
+    /* text-align: center;
     position: fixed;
     min-width: 100%;
-    height: inherit;
+    height: inherit; */
 }
 
 header img {
@@ -62,6 +62,7 @@ header {
     text-align: center;
     position: fixed;
     min-width: 100%;
+    height: inherit;
 }
 
 input[type="checkbox"]{

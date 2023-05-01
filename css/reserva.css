@@ -55,8 +55,6 @@ header {
     background-color: var(--cor05);
     height: 124px;
     text-align: center;
-    min-width: 100%;
-    text-align: center;
     position: fixed;
     min-width: 100%;
     height: inherit;
