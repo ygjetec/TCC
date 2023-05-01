@@ -10,7 +10,29 @@
     --cor07:#FFD54B;
     --cor08:#FF5A54;
 }
-x
+
+.dark_mode:root{
+    --cor00:#000000;
+    --cor01:#323232;
+    --cor02:#A62479;
+    --cor03:#4BC3F2;
+    --cor04:#418EF2;
+    --cor05:#3D58F2;
+    --cor06:#32BA7C;
+    --cor07:#FFD54B;
+    --cor08:#FF5A54;
+    --cor09:#ffffff;
+    /* --cor10:#3D58F2; */
+
+    --cor11:#252525;
+    --cor01:#323232;
+    --cor13:#05DBF2;
+    --cor14:#04ADBF;
+    --cor15:#106973;
+    --cor16:#133B40;
+    --cor00:#0D0D0D;
+}
+
 * {
     margin: 0;
     padding: 0;
