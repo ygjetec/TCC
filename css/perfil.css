@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 :root {
+    --cor00:#ffffff;
     --cor01:#F2F2F2;
     --cor02:#A62479;
     --cor03:#3D58F2;
@@ -9,6 +10,30 @@
     --cor06:#32BA7C;
     --cor07:#FFD54B;
     --cor08:#FF5A54;
+    --cor09:#000000;
+    --cor10:#000000;
+}
+
+.dark_mode:root{
+    --cor00:#000000;
+    --cor01:#323232;
+    --cor02:#A62479;
+    --cor03:#4BC3F2;
+    --cor04:#418EF2;
+    --cor05:#3D58F2;
+    --cor06:#32BA7C;
+    --cor07:#FFD54B;
+    --cor08:#FF5A54;
+    --cor09:#ffffff;
+    /* --cor10:#3D58F2; */
+
+    --cor11:#252525;
+    --cor01:#323232;
+    --cor13:#05DBF2;
+    --cor14:#04ADBF;
+    --cor15:#106973;
+    --cor16:#133B40;
+    --cor00:#0D0D0D;
 }
 
 * {
@@ -50,7 +75,6 @@ header {
     height: 124px;
     text-align: center;
     min-width: 100%;
-
     text-align: center;
     position: fixed;
     min-width: 100%;
@@ -60,6 +84,11 @@ header h1 {
     padding: 35px;
 }
 
+body{
+    background-color: var(--cor00);
+    color: var(--cor09);
+}
+
 #container{
     min-width: 300px;
     max-width: 1000px;
@@ -67,7 +96,7 @@ header h1 {
     margin-bottom: 30px;
     height: 90vh;
     padding: 20px;
-    background-color: white;
+    background-color: var(--cor01);
     box-shadow: 0px 0px 10px var(--cor03);
     border-radius: 0px 0px 10px 10px;
 }
@@ -82,6 +111,12 @@ article {
 
 #campo_img{
     text-align: center;
+}
+
+#campo_img img{
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px var(--cor03);
 }
 
 #form{
@@ -99,7 +134,8 @@ article {
 }
 
 #info input{
-    border: 2px solid black;
+    border: 2px solid var(--cor10);
+    box-shadow: 0px 0px 5px white;
     border-radius: 15px;
     padding: 10px;
     width: 350px;
@@ -120,10 +156,7 @@ article {
 }
 
 #campo_btn{
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
-    /* height: 90px; */
 }
 
 #btn{
@@ -131,6 +164,7 @@ article {
     height: 30px;
     margin: auto;
     background-color: var(--cor06);
+
     color: black;
     border: 2px solid black;
     border-radius: 25px;
@@ -142,6 +176,7 @@ article {
     background-color: white;
     color: black;
     border: 2px solid var(--cor06);
+    box-shadow: 0px 0px 15px var(--cor06);
     transition: 0.5s;
 }
 
@@ -149,7 +184,6 @@ article {
     #container{
         height: 120vh;
         width: 90vw;
-        /* margin-bottom: 30px; */
     }
     
     article{

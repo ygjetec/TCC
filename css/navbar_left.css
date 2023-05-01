@@ -111,7 +111,7 @@ a:hover{
 
 .mobile-menu_left.active .line_img{
     /* opacity: 0; */
-    border: 3px solid var(--cor01);
+    border: 3px solid white;
     border-radius: 25px;
 }
 
