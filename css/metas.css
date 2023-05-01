@@ -412,3 +412,9 @@ hr {
     border-radius: 31px;
     transition: 0.4s;
 }
+
+.hist {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}

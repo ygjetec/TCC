@@ -69,11 +69,27 @@
         </header>    
 
         <article>
-            <div class="btns-criar-remover" onclick="showModal()" >
-                <button id="btn-add" >
+            <div class="btns-criar-remover" >
+                <button id="btn-add" onclick="showModal()">
                     Criar Meta
                     <img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de adicionar">
                 </button>
+            </div>
+            
+            <div class="modal" id="modal-metas">
+                <div class="caixa">
+                    <div class="modal-content">
+                        <div class="btn-fechar">
+                            <input onclick="hideModalMetasConcluidas()" type="reset" value="X" id="fechar-card">
+                        </div>
+                        <h2>Metas Concluídas</h2>
+                        <div class="lista">
+                            <div class="meta">
+                                <p>Meta (Select do banco)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="modal" id="modal">
@@ -104,25 +120,29 @@
                     </div>
                 </div>
             </div>
+
                 <div class="desc">
-                <div>
-                    <h2 id="tit-MM">Minhas Metas</h2>
-                </div>
-                <div class="classificacoes">
-                    <h2 id="prioridades">Prioridades: </h2>
-                    <div class="quads">
-                        <h3>Não Urgente</h3>
-                        <div id="quad-verde"></div>
+                    <div class="hist">
+                        <h2 id="tit-MM">Minhas Metas</h2>
+                        <button onclick="showModalMetasConcluidas()">
+                            Histórico de Metas
+                        </button>
                     </div>
-                    <div class="quads">
-                        <h3>Média</h3>
-                        <div id="quad-amarelo"></div>
+                    <div class="classificacoes">
+                        <h2 id="prioridades">Prioridades: </h2>
+                        <div class="quads">
+                            <h3>Não Urgente</h3>
+                            <div id="quad-verde"></div>
+                        </div>
+                        <div class="quads">
+                            <h3>Média</h3>
+                            <div id="quad-amarelo"></div>
+                        </div>
+                        <div class="quads">
+                            <h3>Urgente</h3>
+                            <div id="quad-vermelho"></div>
+                        </div>
                     </div>
-                    <div class="quads">
-                        <h3>Urgente</h3>
-                        <div id="quad-vermelho"></div>
-                    </div>
-                </div>
                 </div>
             </div>
 

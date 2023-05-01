@@ -10,6 +10,17 @@ function hideModal() {
     element.classList.remove("show-modal");
 }
 
+function showModalMetasConcluidas() {
+    var element = document.getElementById("modal-metas");
+    element.classList.add("show-modal");
+}
+
+function hideModalMetasConcluidas() {
+    var element = document.getElementById("modal-metas");
+    element.classList.remove("show-modal");
+}
+
+
 //Cards da tela de Planejamento
 
 function showModal_vlrfx() {
