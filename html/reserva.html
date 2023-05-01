@@ -70,7 +70,30 @@
             <div class="cont-esq">
                 <div id="campo-1">
                     <h2>Quantia desejada: </h2>
-                    <h2 id="cont-campo-1">R$ XXXX,XX</h2>
+                    <div id="quantia">
+                        <h2 id="cont-campo-1">R$ XXXX,XX</h2>
+                        <button id="btn-adcQuantia" onclick="showModal_adcQuantia()">
+                            <img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de mais">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal_adcQuantia">
+                    <div class="caixa">
+                        <div class="modal-content adcQuantia">
+                            <form action="">
+                                <div class="btn-fechar" onclick="hideModal_adcQuantia()">
+                                    <input type="reset" value="X" id="fechar-card">
+                                </div>
+                                <h2>Adicionar Quantia Desejada</h2>
+                                <div class="campo">
+                                    <label for="adc-quantia">Adicionar: </label>
+                                    <input type="number" name="valor-adc" required>
+                                </div>
+                                <input type="submit" value="Confirmar" class="btn-conf">
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="grafico">

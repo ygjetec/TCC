@@ -129,6 +129,22 @@ article {
     width: 225px;
 }
 
+#quantia{
+    display: flex;
+}
+
+#btn-adcQuantia{
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
+    width: 50px;
+}
+
+#btn-adcQuantia img{
+    width: 45px;
+    height: 39px;
+}
+
 .btns {
     display: flex;
     justify-content: space-between;
@@ -199,6 +215,10 @@ article {
     width: 310px;
     height: auto;
     border-radius: 15px;
+}
+
+.adcQuantia{
+    width: 385px;
 }
 
 .modal-content h2 {

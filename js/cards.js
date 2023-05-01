@@ -46,6 +46,16 @@ function hideModal_planejamento() {
 
 //Cards da tela de Reserva
 
+function showModal_adcQuantia() {
+    var element = document.getElementById("modal_adcQuantia");
+    element.classList.add("show-modal");
+}
+
+function hideModal_adcQuantia() {
+    var element = document.getElementById("modal_adcQuantia");
+    element.classList.remove("show-modal");
+}
+
 function showModal_adc() {
     var element = document.getElementById("modal_adc");
     element.classList.add("show-modal");
