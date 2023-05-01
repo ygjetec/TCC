@@ -63,6 +63,28 @@ header {
     height: inherit;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+
+.bi{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon{
+    display: none;
+}
+
+.dark_mode .bi-sun{
+    display: none;
+}
+
+.dark_mode .bi-moon{
+    display: block;
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
