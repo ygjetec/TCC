@@ -94,26 +94,37 @@ body {
 }
 
 article {
-    padding-top: 167px;
+    padding-top: 130px;
+}
+
+.title{
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
 }
 
 .btns-criar-remover {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 50px;
 }
 
 .btns-criar-remover button {
     border: 3px solid black;
     border-radius: 25px;
-    width: 300px;
-    height: 50px;
+    width: 160px;
+    height: 45px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 25px
+    padding: 20px
 }
 
 #btn-add {
@@ -132,6 +143,44 @@ article {
     color: black;
     transition: 0.4s;
     border: 3px solid var(--cor06);
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.hist_btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hist_btn button {
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 155px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px
+}
+
+#hist {
+    background-color: var(--cor02);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#hist img {
+    width: 35px;
+    height: 35px;
+}
+
+#hist:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+    border: 3px solid var(--cor02);
     font-weight: bolder;
     font-size: medium;
 }
@@ -302,11 +351,6 @@ article {
     align-items: center;
 }
 
-#tit-MM {
-    display: flex;
-    align-items: center;
-}
-
 #prioridades {
     display: flex;
     align-items: center;
@@ -403,7 +447,7 @@ hr {
 }
 
 #btn-rem img {
-    width: 48px;
+    width: 47px;
     height: 49px;
 }
 
@@ -413,8 +457,3 @@ hr {
     transition: 0.4s;
 }
 
-.hist {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-}

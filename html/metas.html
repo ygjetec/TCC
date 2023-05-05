@@ -69,11 +69,8 @@
         </header>    
 
         <article>
-            <div class="btns-criar-remover" >
-                <button id="btn-add" onclick="showModal()">
-                    Criar Meta
-                    <img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de adicionar">
-                </button>
+            <div class="title">
+                <h2 id="tit-MM">Minhas Metas</h2>
             </div>
             
             <div class="modal" id="modal-metas">
@@ -122,11 +119,20 @@
             </div>
 
                 <div class="desc">
-                    <div class="hist">
-                        <h2 id="tit-MM">Minhas Metas</h2>
-                        <button onclick="showModalMetasConcluidas()">
-                            Histórico de Metas
-                        </button>
+                    <div class="botoes">
+                        <div class="btns-criar-remover" >
+                            <button id="btn-add" onclick="showModal()">
+                                Criar Meta
+                                <img src="/imgs/btn-icon-criar.svg" alt="Ícone preto e branco de um quadrado com o símbolo de adicionar">
+                            </button>
+                        </div>
+                        
+                        <div class="hist_btn">
+                            <button id="hist" onclick="showModalMetasConcluidas()">
+                                Histórico
+                                <img src="/imgs/icon-extrato.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                     <div class="classificacoes">
                         <h2 id="prioridades">Prioridades: </h2>
