@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 :root {
+    --cor00:#ffffff;
     --cor01:#F2F2F2;
     --cor02:#A62479;
     --cor03:#3D58F2;
@@ -9,10 +10,11 @@
     --cor06:#32BA7C;
     --cor07:#FFD54B;
     --cor08:#FF5A54;
+
+    --corLetras:#000000;
 }
 
 .dark_mode:root{
-    --cor00:#000000;
     --cor01:#323232;
     --cor02:#A62479;
     --cor03:#4BC3F2;
@@ -22,7 +24,8 @@
     --cor07:#FFD54B;
     --cor08:#FF5A54;
     --cor09:#ffffff;
-    /* --cor10:#3D58F2; */
+
+    --corLetras:#ffffff;
 
     --cor11:#252525;
     --cor01:#323232;
@@ -31,6 +34,10 @@
     --cor15:#106973;
     --cor16:#133B40;
     --cor00:#0D0D0D;
+
+    --cor17:#676f9d;
+    --cor18:#424769;
+    --cor00:#2d3250;
 }
 
 * {
@@ -63,6 +70,11 @@ header {
     position: fixed;
     min-width: 100%;
     height: inherit;
+}
+
+body{
+    background-color: var(--cor00);
+    color: var(--corLetras);
 }
 
 input[type="checkbox"]{
@@ -204,7 +216,7 @@ article {
 
 .modal-content {
     position: relative;
-    background-color: white;
+    background-color: var(--cor00);
     padding: 35px 25px;
     width: 350px;
     height: auto;
@@ -396,6 +408,7 @@ article {
     height: 200px;
     justify-content: space-evenly;
 
+    box-shadow: 0px 0px 10px var(--cor03);
     background-color: var(/*verde, vermelho ou amarelo*/);
 }
 
@@ -424,11 +437,17 @@ hr {
 
 #btn-concluido {
     border-style: unset;
-    background-color: #ffffff;
+    background-color: var(--cor00);
     cursor: pointer;
     padding: 2px;
     height: 51px;
     width: 51px;
+}
+
+#btn-concluido img{
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px white;
 }
 
 #btn-concluido:hover{
@@ -437,9 +456,16 @@ hr {
     transition: 0.4s;
 }
 
+#btn-concluido img:hover{
+    background-color: var(--cor06);
+    border-radius: 25px;
+    transition: 0.4s; 
+    box-shadow: 0px 0px 10px var(--cor06);
+}
+
 #btn-rem {
     border-style: none;
-    background-color: #ffffff;
+    background-color: var(--cor00);
     cursor: pointer;
     padding: 0px;
     width: 49px;
@@ -449,11 +475,21 @@ hr {
 #btn-rem img {
     width: 47px;
     height: 49px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px white;
 }
 
 #btn-rem:hover{
     background-color: var(--cor08);
     border-radius: 31px;
     transition: 0.4s;
+}
+
+#btn-rem img:hover{
+    background-color: var(--cor08);
+    border-radius: 25px;
+    transition: 0.4s; 
+    box-shadow: 0px 0px 10px var(--cor08);
 }
 
