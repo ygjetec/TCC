@@ -12,6 +12,8 @@
     --cor08:#FF5A54;
     --cor09:#000000;
     --cor10:#000000;
+
+    --cor_fundo: #ffffff;
 }
 
 .dark_mode:root{
@@ -34,6 +36,8 @@
     --cor15:#106973;
     --cor16:#133B40;
     --cor00:#0D0D0D;
+
+    --cor_fundo: #2d3250;
 }
 
 * {
@@ -85,7 +89,7 @@ header h1 {
 }
 
 body{
-    background-color: var(--cor00);
+    background-color: var(--cor_fundo);
     color: var(--cor09);
 }
 
