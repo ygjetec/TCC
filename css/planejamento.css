@@ -9,6 +9,12 @@
     --cor06:#32BA7C;
     --cor07:#FFD54B;
     --cor08:#FF5A54;
+
+    --corLetras:#000000;
+    --cor_sombra:#ffffff;
+    --cor_sombra2:#ffffff;
+    --cor_sombra_btn:#ffffff;
+    --cor_fundo: #ffffff;
 }
 
 .dark_mode:root{
@@ -31,6 +37,12 @@
     --cor15:#106973;
     --cor16:#133B40;
     --cor00:#0D0D0D;
+
+    --cor_sombra:#4BC3F2;
+    --cor_sombra2:#A62479;
+    --cor_sombra_btn:#32BA7C;
+    --corLetras:#ffffff;
+    --cor_fundo: #2d3250;
 }
 
 * {
@@ -62,6 +74,12 @@ header {
     min-width: 100%;
     height: inherit;
 }
+
+body{
+    background-color: var(--cor_fundo);
+    color: var(--corLetras);
+}
+
 
 input[type="checkbox"]{
     display: none;
@@ -119,7 +137,7 @@ article {
 
 .campos-valores {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .valores-fixos {
@@ -148,6 +166,7 @@ article {
 
 #btn-addValorFixo{
     background-color: var(--cor06);
+    box-shadow: 0px 0px 10px var(--cor_sombra_btn);
     border: 2.5px solid black;
     border-radius: 25px;
 }
@@ -407,6 +426,7 @@ article {
     width: 100px;
     margin: 0px auto;
     background-color: var(--cor06);
+    box-shadow: 0px 0px 10px var(--cor_sombra_btn);
     border: 2.5px solid black;
     border-radius: 25px;
     font-weight: bolder;
@@ -433,6 +453,7 @@ article {
 
 .caixa-valores-fixos {
     border: 5px solid var(--cor03);
+    box-shadow: 0px 0px 10px var(--cor_sombra);
     border-radius: 25px;
     width: 450px;
     height: 35vh;
@@ -475,6 +496,7 @@ article {
 .quadro {
     margin-top: 15px;
     border: 5px solid var(--cor02);
+    box-shadow: 0px 0px 10px var(--cor_sombra2);
     border-radius: 25px;
     height: 100%;
     width: 55vw;
@@ -513,7 +535,7 @@ article {
     }
 }
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1260px) {
     .first{
         margin: 0;
     }
